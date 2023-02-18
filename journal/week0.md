@@ -1,6 +1,6 @@
 # Week 0 — Billing and Architecture
 
-## $${\color{white}Team \space Solo Yo:\color{blue}Ultra \space Man \space (Tony)}$$ 
+## $${\color{white}\space Solo \space Yo:\color{blue}Ultra \space Man \space (Tony)}$$ 
 
 ## Individual To Do Checklist:
    
