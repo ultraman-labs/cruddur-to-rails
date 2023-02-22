@@ -28,4 +28,5 @@
 | * Get Docker files working together |
 | * Get Docker files working together with Docker Compose |
 | * In GitPod Dev, identified inside outused container processes of Dockerfile |
+| * Containerized Backend -- Got JSON from https://4567-ultramanlab-awsbootcamp-fn2r29njef5.ws-us87.gitpod.io/api/activities/home |
 
