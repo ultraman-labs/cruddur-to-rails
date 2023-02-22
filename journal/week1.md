@@ -20,5 +20,5 @@
 | Run Postgres Container and ensure it works | -- |
 
 
-## Notes for Weekly summary
-#  * Writing two docker files
+# Notes for Weekly summary
+##  * Writing two docker files
