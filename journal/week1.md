@@ -1,7 +1,7 @@
 # Week 1 — App Containerization
 
 ## $${\color{white}Team:\color{blue}Cloud \space West}$$ 
-## $${\color{white}Team \space Members:\color{blue}Mani  \space Ultra \space Man \space}$$ 
+## $${\color{white}Team \space Members:\color{blue} \space Ultra \space Man \space}$$ 
 
 
  ## Team To Do Checklist:
