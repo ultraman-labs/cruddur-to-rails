@@ -27,4 +27,5 @@
 | * Get Docker files running |
 | * Get Docker files working together |
 | * Get Docker files working together with Docker Compose |
+| * In GitPod Dev, identified inside outused container processes of Dockerfile |
 
