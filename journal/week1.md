@@ -24,7 +24,7 @@
 | NOTES FOR WEEKLY SUMMARY |
 | --- | 
 | * Writing two docker files |
-| * Get Docker running |
+| * Get Docker files running |
 | * Get Docker files working together |
 | * Get Docker files working together |
 
