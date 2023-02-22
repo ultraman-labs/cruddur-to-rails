@@ -26,5 +26,5 @@
 | * Writing two docker files |
 | * Get Docker files running |
 | * Get Docker files working together |
-| * Get Docker files working together |
+| * Get Docker files working together with DOcker Compose |
 
