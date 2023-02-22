@@ -23,5 +23,7 @@
 # Notes for Weekly summary
 | NOTES FOR WEEKLY SUMMARY |
 | --- | 
-| Writing two docker files |
-##  * Writing two docker file
+| * Writing two docker files |
+| * Note n |
+| * Note n + 1 |
+
