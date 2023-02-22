@@ -18,3 +18,7 @@
 | Write a React Page for Notifications | -- |
 | Run DynamoDB Local Container and ensure it works | -- |
 | Run Postgres Container and ensure it works | -- |
+
+
+## Notes for Weekly summary
+#  * Writing two docker files
