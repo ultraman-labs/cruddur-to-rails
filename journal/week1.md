@@ -32,6 +32,6 @@
 | * Successfully built Frontend and Backend Docker containers |
 | * Remember to make port 4567 public by unlocking padlock icon |
 ![Port Screenshot](_docs/assets/week1/UnlockPort.png)
-| --- | 
-| * Writing two docker files |
+| ---------------------------------------------------------------------------------------------------------------------------------- | 
+| * Fascinating the Docker Composer runs multiple containers simultaneously |
 
