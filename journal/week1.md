@@ -7,12 +7,12 @@
 | TASK | COMPLETED |
 |  --- |    ---    |
 | Watch How to Ask for Technical Help | :heavy_check_mark: |
-| Watched Grading Homework Summaries   | -- |
-| Watched Week 1 - Live Streamed Video | -- |
-| Remember to Commit Your Code | -- |
-| WatcHed Chirag's Week 1 - Spending Consideratio | -- |
-| Watched Ashish's Week 1 - Container Security Considerations | -- |
-| Containerize Application (Dockerfiles, Docker Compose) | -- |
+| Watched Grading Homework Summaries   | :heavy_check_mark: |
+| Watched Week 1 - Live Streamed Video | :heavy_check_mark: |
+| Remember to Commit Your Code | :heavy_check_mark: |
+| WatcHed Chirag's Week 1 - Spending Consideratio | :heavy_check_mark: |
+| Watched Ashish's Week 1 - Container Security Considerations | :heavy_check_mark: |
+| Containerize Application (Dockerfiles, Docker Compose) | :heavy_check_mark: |
 | Document the Notification Endpoint for the OpenAI Document | -- |
 | Write a Flask Backend Endpoint for Notifications | -- |
 | Write a React Page for Notifications | -- |
@@ -29,5 +29,7 @@
 | * Get Docker files working together with Docker Compose |
 | * In GitPod Dev, identified inside outused container processes of Dockerfile |
 | * Containerized Backend -- Got JSON from https://4567-ultramanlab-awsbootcamp-fn2r29njef5.ws-us87.gitpod.io/api/activities/home |
-| * Successfully built Docker |
+| * Successfully built Frontend and Backend Docker containers |
+| * Remember to make port 4567 public by unlocking padlock icon |
+| ![Port Screenshot](_docs/assets/week1/UnlockPort.png) |
 
