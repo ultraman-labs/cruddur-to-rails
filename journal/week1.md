@@ -3,7 +3,7 @@
 ## $${\color{white}\space Solo \space Yo:\color{blue}Ultra \space Man \space (Tony)}$$ 
 
 
-# Progress notes to self
+# Progress and "Ah-ha" notes to self
 | *********************** |
 | --- | 
 | * Writing two docker files |
