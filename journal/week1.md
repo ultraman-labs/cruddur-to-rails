@@ -14,9 +14,9 @@
 | * Containerized Backend -- Got JSON from https://4567-ultramanlab-awsbootcamp-fn2r29njef5.ws-us87.gitpod.io/api/activities/home |
 | * Successfully built Frontend and Backend Docker containers |
 | * Remembered to make port 4567 public by unlocking padlock icon |
-![Port Screenshot](../_docs/assets/week1/UnlockPort.png)
+| ![Port Screenshot](../_docs/assets/week1/UnlockPort.png) |
 | ---------------------------------------------------------------------------------------------------------------------------------- | 
 | * Fascinating how Docker Composer runs multiple containers simultaneously |
 | * Ran into a CORS error, resolved by restarting workspace |
-| * Fascinating the Docker Composer runs multiple containers simultaneously |
+| ![Crudder SignUp Screenshot](../_docs/assets/week1/CruddarSignUp.png) |
 
