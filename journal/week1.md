@@ -7,8 +7,8 @@
 | *********************** |
 | --- | 
 | * Writing two docker files |
-| * Sucess with Docker files running |
-| * Sucess with Docker files working together |
+| * Success with Docker files running |
+| * Success with Docker files working together |
 | * After an intial hiccup, was able to get Docker files working together with Docker Compose |
 | * In GitPod Dev, identified and understood inside outside container processes of Dockerfile |
 | * Containerized Backend -- Got JSON from https://4567-ultramanlab-awsbootcamp-fn2r29njef5.ws-us87.gitpod.io/api/activities/home |
