@@ -18,6 +18,6 @@
 | ---------------------------------------------------------------------------------------------------------------------------------- | 
 | * Fascinating how Docker Composer runs multiple containers simultaneously |
 | * Ran into a CORS error, resolved by restarting workspace |
-| * Cruddur Screenshot of SighUp |
+| * Cruddur Screenshot of SignUp |
 | ![Crudder SignUp Screenshot](../_docs/assets/week1/CruddarSignUp.png) |
 
