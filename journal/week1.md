@@ -20,4 +20,5 @@
 | * Ran into a CORS error, resolved by restarting workspace |
 | * Cruddur Screenshot of SignUp |
 | ![Crudder SignUp Screenshot](../_docs/assets/week1/CruddarSignUp.png) |
+| * Discovered how to toggle the mini-map in GitPod |
 
