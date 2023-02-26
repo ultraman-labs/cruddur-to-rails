@@ -150,19 +150,19 @@ paths:
                   $ref: '#/components/schemas/Message'
   /api/activities/notifications:
     get:
-      description: 'Return a feed of activity for all those that I follow'
+      description: "Return a feed a activity for all those that I follow"
       tags:
         - activities
       parameters: []
       responses:
-        '200':
-          description: Returns an array of activities
+        "200":
+          description: Returns an array of notifications
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/Activity'
+                  $ref: "#/components/schemas/Notification"
 components:
   schemas:
     Activity:
@@ -195,6 +195,21 @@ components:
         expires_at:
           type: string
           example: "2023-02-06T18:11:03+00:00"
+    Notification:
+      type: object
+      properties:
+        uuuid:
+          type: string
+          example: 0056a369-4618-43a4-ad88-e7c371bf5582
+        message:
+          type: string
+          example: "Who likes chorizo on their pizza?"
+        created_at:
+          type: string
+          example: "2023-02-06T18:11:03+00:00"
+        expires_at:
+          type: string
+          example: "2023-02-06T18:11:03+00:00"          
     Reply:
       type: object
       properties:
