@@ -21,4 +21,5 @@
 | * Cruddur Screenshot of SignUp |
 | ![Crudder SignUp Screenshot](../_docs/assets/week1/CruddarSignUp.png) |
 | * Discovered how to toggle the mini-map in GitPod |
-
+| * Endpoint for the notifications tab. Swimming in a hay stack of code |
+| ![Crudder SignUp Screenshot](../_docs/assets/week1/EndpointNotification.png) |
