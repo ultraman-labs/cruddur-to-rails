@@ -27,3 +27,4 @@
 | ![NameError Screenshot](../_docs/assets/week1/NameError.png) |
 ## * Resolved. Within "user_notifications.py" file, the "class"  was not defined with the correct name of "UserNotifications"
 | ![NameError Screenshot](../_docs/assets/week1/ClassName.png) |
+ 
