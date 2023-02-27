@@ -1,11 +1,11 @@
 # Week 1 — App Containerization
 
-## $${\color{white}\space Solo \space Yo:\color{blue}Ultra \space Man \space (Tony)}$$ 
+## $${\color{white}\space Solo \space Yo:\color{blue}Ultra \space Man \space (Tony)}$$
 
 
 # Progress and "Ah-ha" notes to self
 | *********************** |
-| --- | 
+| --- |
 | * Writing two docker files |
 | * Success with Docker files running |
 | * Success with Docker files working together |
@@ -15,7 +15,7 @@
 | * Successfully built Frontend and Backend Docker containers |
 | * Remembered to make port 4567 public by unlocking padlock icon |
 | ![Port Screenshot](../_docs/assets/week1/UnlockPort.png) |
-| ---------------------------------------------------------------------------------------------------------------------------------- | 
+| ---------------------------------------------------------------------------------------------------------------------------------- |
 | * Fascinating how Docker Composer runs multiple containers simultaneously |
 | * Ran into a CORS error, resolved by restarting workspace |
 | * Cruddur Screenshot of SignUp |
@@ -29,9 +29,6 @@
 | ![Class Name Screenshot](../_docs/assets/week1/ClassName1.png) |
 ## Success. Rendered JSON structured data with intended string changes
 | ![JSON Data Screenshot](../_docs/assets/week1/JsonData1.png) |
-## $${\color{blue}Created \space the \space FrontEnd \space user \space notifications \space tab}$$ 
+## $${\color{blue}Created \space the \space FrontEnd \space user \space notifications \space tab}$$
 
 | ![FrontEndNotification Screenshot](../_docs/assets/week1/NotificationsTab.png) |
-
-
- 
