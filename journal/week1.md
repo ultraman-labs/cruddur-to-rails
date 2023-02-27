@@ -22,7 +22,6 @@
 | ![Crudder SignUp Screenshot](../_docs/assets/week1/CruddarSignUp.png) |
 | * Discovered how to toggle the mini-map in GitPod |
 | * Endpoint for notifications tab. Resolved issue of "user_notification.py" module not found. Extra blank space after extension was the issue. |
-| ![EndpointNotification Screenshot](../_docs/assets/week1/EndpointNotification1.png) |
-\ --- \
+| --- |
 | * NameError ... trying to figure out how to trace "UserNotifications" not defined error. |
 | ![NameError Screenshot](../_docs/assets/week1/NameError.png) |
