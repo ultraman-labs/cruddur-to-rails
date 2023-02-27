@@ -30,7 +30,7 @@
 ## Success. Rendered JSON structured data with intended string changes
 | ![JSON Data Screenshot](../_docs/assets/week1/JsonData1.png) |
 ## Created the FrontEnd User Notification
-| ![FrontEndNotification Screenshot](../_docs/assets/week1/FrontEndNotification.png) |
+| ![FrontEndNotification Screenshot](../_docs/assets/week1/FrontEndNotifications.png) |
 
 
  
