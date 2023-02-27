@@ -28,6 +28,6 @@
 ## * Resolved. Within "user_notifications.py" file, the "class"  was not defined with the correct name of "UserNotifications"
 | ![Class Name Screenshot](../_docs/assets/week1/ClassName1.png) |
 ## Success. Rendered JSON structured data with intended string changes
-| ![JSON Data Screenshot](../_docs/assets/week1/JasonData.png) |
+| ![JSON Data Screenshot](../_docs/assets/week1/JsonData.png) |
 
  
