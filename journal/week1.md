@@ -29,8 +29,7 @@
 | ![Class Name Screenshot](../_docs/assets/week1/ClassName1.png) |
 ## Success. Rendered JSON structured data with intended string changes
 | ![JSON Data Screenshot](../_docs/assets/week1/JsonData1.png) |
-## Created the FrontEnd User Notification
-## $${\color{white}\space color{blue}Created \space the \space FrontEnd \space User \space \Notification}$$ 
+## $${\space color{blue}Created \space the \space FrontEnd \space User \space \Notification}$$ 
 | ![FrontEndNotification Screenshot](../_docs/assets/week1/FrontEndNotifications.png) |
 
 
