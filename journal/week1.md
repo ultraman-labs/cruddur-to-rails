@@ -31,7 +31,7 @@
 | ![JSON Data Screenshot](../_docs/assets/week1/JsonData1.png) |
 ## $${\color{blue}Created \space the \space FrontEnd \space user \space notifications \space tab}$$ 
 
-| ![FrontEndNotification Screenshot](../_docs/assets/week1/FrontEndNotifications.png) |
+| ![FrontEndNotification Screenshot](../_docs/assets/week1/NotificationsTab.png) |
 
 
  
