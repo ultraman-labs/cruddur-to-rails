@@ -26,5 +26,8 @@
 ## * NameError ... trying to figure out how to trace "UserNotifications" not defined error.  
 | ![NameError Screenshot](../_docs/assets/week1/NameError.png) |
 ## * Resolved. Within "user_notifications.py" file, the "class"  was not defined with the correct name of "UserNotifications"
-| ![NameError Screenshot](../_docs/assets/week1/ClassName1.png) |
+| ![Class Name Screenshot](../_docs/assets/week1/ClassName1.png) |
+## Success. Rendered JSON structured data with intended string changes
+| ![JSON Data Screenshot](../_docs/assets/week1/JasonData.png) |
+
  
