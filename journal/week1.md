@@ -1,21 +1,34 @@
 # Week 1 — App Containerization
 
-## $${\color{white}\space Solo \space Yo:\color{blue}Ultra \space Man \space (Tony)}$$  
+## $${\color{white}\space Solo \space Yo:\color{blue}Ultra \space Man \space (Tony)}$$
 
 
- ## To Do Checklist:
-   
-| TASK | COMPLETED |
-|  --- |    ---    |
-| Watch How to Ask for Technical Help | :heavy_check_mark: |
-| Watched Grading Homework Summaries   | -- |
-| Watched Week 1 - Live Streamed Video | -- |
-| Remember to Commit Your Code | -- |
-| WatcHed Chirag's Week 1 - Spending Consideratio | -- |
-| Watched Ashish's Week 1 - Container Security Considerations | -- |
-| Containerize Application (Dockerfiles, Docker Compose) | -- |
-| Document the Notification Endpoint for the OpenAI Document | -- |
-| Write a Flask Backend Endpoint for Notifications | -- |
-| Write a React Page for Notifications | -- |
-| Run DynamoDB Local Container and ensure it works | -- |
-| Run Postgres Container and ensure it works | -- |
+# Progress and "Ah-ha" notes to self
+| *********************** |
+| --- |
+| * Writing two docker files |
+| * Success with Docker files running |
+| * Success with Docker files working together |
+| * After an intial hiccup, was able to get Docker files working together with Docker Compose |
+| * In GitPod Dev, identified and understood inside outside container processes of Dockerfile |
+| * Containerized Backend -- Got JSON from https://4567-ultramanlab-awsbootcamp-fn2r29njef5.ws-us87.gitpod.io/api/activities/home |
+| * Successfully built Frontend and Backend Docker containers |
+| * Remembered to make port 4567 public by unlocking padlock icon |
+| ![Port Screenshot](../_docs/assets/week1/UnlockPort.png) |
+| ---------------------------------------------------------------------------------------------------------------------------------- |
+| * Fascinating how Docker Composer runs multiple containers simultaneously |
+| * Ran into a CORS error, resolved by restarting workspace |
+| * Cruddur Screenshot of SignUp |
+| ![Crudder SignUp Screenshot](../_docs/assets/week1/CruddarSignUp.png) |
+| * Discovered how to toggle the mini-map in GitPod |
+| * Endpoint for notifications tab. Resolved issue of "user_notification.py" module not found. Extra blank space after extension was the issue. |
+| --- |
+## * NameError ... trying to figure out how to trace "UserNotifications" not defined error.  
+| ![NameError Screenshot](../_docs/assets/week1/NameError.png) |
+## * Resolved. Within "user_notifications.py" file, the "class"  was not defined with the correct name of "UserNotifications"
+| ![Class Name Screenshot](../_docs/assets/week1/ClassName1.png) |
+## Success. Rendered JSON structured data with intended string changes
+| ![JSON Data Screenshot](../_docs/assets/week1/JsonData1.png) |
+## $${\color{blue}Created \space the \space FrontEnd \space user \space notifications \space tab}$$
+
+| ![FrontEndNotification Screenshot](../_docs/assets/week1/NotificationsTab.png) |
