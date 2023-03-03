@@ -30,6 +30,5 @@
 ## Success. Rendered JSON structured data with intended string changes
 | ![JSON Data Screenshot](../_docs/assets/week1/JsonData1.png) |
 | --- |
-## $${\color{blue}Created \space the \space FrontEnd \space user \space notifications \space tab}$$
-
+## Created the FrontEnd user notifications tab
 | ![FrontEndNotification Screenshot](../_docs/assets/week1/NotificationsTab.png) |
