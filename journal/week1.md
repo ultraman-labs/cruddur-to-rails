@@ -32,3 +32,9 @@
 | --- |
 ## Created the FrontEnd user notifications tab
 | ![FrontEndNotification Screenshot](../_docs/assets/week1/NotificationsTab.png) |
+| --- |
+## Had to circle back and recreate the credentials for the IAM user and confirm subscripiton. My error was using the access keys of a different user. All good now.
+| ![FrontEndNotification Screenshot](../_docs/assets/week1/subscriptionConfirmed.png) |
+
+
+
