@@ -1,9 +1,9 @@
 {
   "BudgetLimit": {
-      "Amount": "100",
+      "Amount": "5",
       "Unit": "USD"
   },
-  "BudgetName": "Example Tag Budget",
+  "BudgetName": "Ultra-Labs Budget",
   "BudgetType": "COST",
   "CostFilters": {
       "TagKeyValue": [
