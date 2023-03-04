@@ -38,6 +38,12 @@
 | --- |
 ## Had to circle back and recreate the credentials for the IAM user and confirm subscripiton. My error was using the access keys of a different user. All good now.
 | ![FrontEndNotification Screenshot](../_docs/assets/week1/subscriptionConfirmed2.png) |
+| --- |
+## Retrieved records (two music artist)
+| ![FrontEndNotification Screenshot](../_docs/assets/week1/tableitem.png) |
+| --- |
+
+
 
 
 
