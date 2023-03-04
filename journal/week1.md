@@ -40,7 +40,7 @@
 | ![FrontEndNotification Screenshot](../_docs/assets/week1/subscriptionConfirmed2.png) |
 | --- |
 ## Retrieved records (two music artist)
-| ![FrontEndNotification Screenshot](../_docs/assets/week1/tableitem.png) |
+| ![FrontEndNotification Screenshot](../_docs/assets/week1/tableitems.png) |
 | --- |
 
 
