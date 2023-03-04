@@ -2,6 +2,8 @@
 
 ## $${\color{white} \space Solo \space Yo: \color{blue}Ultra \space Man \space (Tony)}$$
 
+## $${\color{white}\space Solo \space Yo:\color{blue}Ultra \space Man \space (Tony)}$$
+
 
 # Progress and "Ah-ha" notes to self
 | *********************** |
