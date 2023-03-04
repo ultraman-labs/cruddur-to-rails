@@ -33,6 +33,7 @@
 ## Created the FrontEnd user notifications tab
 | ![FrontEndNotification Screenshot](../_docs/assets/week1/NotificationsTab.png) |
 | --- |
+postgresclient.png
 ## Established db connection
 | ![FrontEndNotification Screenshot](../_docs/assets/week1/dbconnect.png) |
 | --- |
@@ -41,6 +42,9 @@
 | --- |
 ## Retrieved records (two music artist)
 | ![FrontEndNotification Screenshot](../_docs/assets/week1/tableitems.png) |
+| --- |
+## Verified postgres client is working
+| ![FrontEndNotification Screenshot](../_docs/assets/week1/postgresclient.png) |
 | --- |
 
 
