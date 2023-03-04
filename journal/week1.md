@@ -2,7 +2,7 @@
 
 ## Ultra Man (Tony)
 
-| --- |
+
 # Progress and "Ah-ha" notes to self
 | *********************** |
 | --- |
