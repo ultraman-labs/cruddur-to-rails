@@ -8,9 +8,9 @@
 | --- |
 | * ![Field Notes](../_docs/assets/week2/Notes-Week2.txt) |
 | * After much troubleshooting, successfully produce a backend trace sent from cruddur|
-| * ![HoneyComb Trace](../_docs/assets/week1/honeycombtrace.png) |
+| * ![HoneyComb Trace](../_docs/assets/week2/honeycombtrace.png) |
 | * Received HonyComb email confirmation of trace from the bootcamp dataset|
-| * ![HoneyComb Confirmation](../_docs/assets/week1/datasetconfirmation.png) |
+| * ![HoneyComb Confirmation](../_docs/assets/week2/datasetconfirmation.png) |
 | * ---|
 | * --- |
 | * --- |
