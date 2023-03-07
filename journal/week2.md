@@ -7,19 +7,22 @@
 | *********************** |
 | --- |
 | * ![Field Notes](../_docs/assets/week2/Notes-Week2.txt) |
-| * Instrument our backend flask application to use Open Telemetry (OTEL) |
-| * Success with Docker files running |
-| * Success with Docker files working together |
-| * After an intial hiccup, was able to get Docker files working together with Docker Compose |
-| * In GitPod Dev, identified and understood inside outside container processes of Dockerfile |
-| * Containerized Backend -- Got JSON from https://4567-ultramanlab-awsbootcamp-fn2r29njef5.ws-us87.gitpod.io/api/activities/home |
-| * Successfully built Frontend and Backend Docker containers |
-| * Remembered to make port 4567 public by unlocking padlock icon |
-| ![Port Screenshot](../_docs/assets/week1/UnlockPort.png) |
+| * After much troubleshooting, successfully produce a backend trace sent from cruddur|
+| * ![HoneyComb Trace](../_docs/assets/week1/honeycombtrace.png) |
+| * Received HonyComb email confirmation of trace from the bootcamp dataset|
+| * ![HoneyComb Confirmation](../_docs/assets/week1/datasetconfirmation.png) |
+| * ---|
+| * --- |
+| * --- |
+| * --- |
+| * --- |
+| * --- |
+| * --- |
+| *--- |
 | ---------------------------------------------------------------------------------------------------------------------------------- |
-| * Fascinating how Docker Composer runs multiple containers simultaneously |
-| * Ran into a CORS error, resolved by restarting workspace |
-| * Cruddur Screenshot of SignUp |
+| * ---|
+| * --- |
+| * --- |
 | ![Crudder SignUp Screenshot](../_docs/assets/week1/CruddarSignUp.png) |
 | * Discovered how to toggle the mini-map in GitPod |
 | * Endpoint for notifications tab. Resolved issue of "user_notification.py" module not found. Extra blank space after extension was the issue. |
