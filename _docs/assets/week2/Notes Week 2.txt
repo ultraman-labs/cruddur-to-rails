@@ -1,0 +1,83 @@
+>> GitPod TIme Stamp   
+
+    Left off at: 1:22:52  
+
+    (3-06-2023)                           (3-07-2023)
+    Start--> 07:37 pm  Credz 954.44       Start--> 07:18 am  Credz 925.53
+    End  --> 10:27 pm  Credz 926.45       End  --> xx:xx pm  Credz
+
+
+    
+      
+
+>> Odds-n-Ends
+
+	* Strange. With file package-lock.json located at /workspace/aws-bootcamp-cruddur-2023/package-lock.json
+        GitPod workspace alerts that this file is untracked. Gives the option to commit file to GitHub.
+        Not sure if I should.
+
+			{
+  			  "name": "aws-bootcamp-cruddur-2023",
+  			  "lockfileVersion": 2,
+  			  "requires": true,
+  			  "packages": {}
+			}
+
+
+>> Honeycomb
+
+	* ui.honeycomb.io
+
+	* API_cruddur_key : qFpPcYYEvC7MeIX3lzL4lD	
+
+	* API Key         : 0HKiS7w83W5ZNalGjQvbxA
+
+	* OTEL is short for Open Telemetry
+
+	* Need to export with
+
+		$ export HONEYCOMB_API_KEY="qFpPcYYEvC7MeIX3lzL4lD"
+
+
+>> GitPod
+
+	* gp env sets persistent environmental variables that are not lost (erased) upon restarting GitPod workspace.
+
+     * To unset an environment variable in GitPod, use the following cammand:
+
+		$ unset {name of variable}
+
+		Example)  $ unset HONEY_COMB_API_KEY   
+
+	* In GitPod the syntax ${name of environment variable} in a yml file, is how GitPod loads (references) into a
+       a docker file.
+
+	* After commiting code to GitHub, and you get Sync errors, do a "push" by entering the following at the prompt. 
+
+		$ git push
+  
+     * When done with your workspace, be sure to tag the work you have done for the week by entering:
+
+		$ git tag week-x
+		$ git push --tags
+
+
+>> Docker Commands
+
+		$ docker compose -f "docker-compose.yml" down
+
+
+>> Resources
+   
+	* https://opentelemetry.io
+
+
+      
+           
+
+
+
+
+
+
+
