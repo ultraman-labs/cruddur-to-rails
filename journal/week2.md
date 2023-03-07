@@ -6,7 +6,7 @@
 # Progress/refernce and "Ah-ha" notes to self
 | *********************** |
 | --- |
-| * ![Field Notes](../_docs/assets/week2/Notes-Week2.txt) |
+| * Field Notes (../_docs/assets/week2/Notes-Week2.txt) |
 | * Instrument our backend flask application to use Open Telemetry (OTEL) |
 | * Success with Docker files running |
 | * Success with Docker files working together |
