@@ -10,7 +10,7 @@
 | --- |
 | * After much troubleshooting, successfully produce a backend trace sent from cruddur|
 | --- |
-| * ![HoneyComb Trace](../_docs/assets/week2/honeycombtrace.png) |
+| * ![HoneyComb Trace](../_docs/assets/week2/honeycombtrace1.png) |
 | --- |
 | * Received HonyComb email confirmation of trace from the backend-flask dataset|
 | --- |
