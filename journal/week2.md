@@ -6,7 +6,7 @@
 # Progress/refernce and "Ah-ha" notes to self
 | *********************** |
 | --- |
-| * ![Field Notes](../_docs/assets/week2/Notes-Week2.txt) |
+| * ![Field Notes](../_docs/assets/week2/honeycombtrace1.png) ![Field Notes2](../_docs/assets/week2/Notes-Week2.txt) |
 | --- |
 | * After much troubleshooting, successfully produce a backend trace sent from cruddur|
 | --- |
