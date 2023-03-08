@@ -6,7 +6,7 @@
 # Progress/refernce and "Ah-ha" notes to self
 | *********************** |
 | --- |
-| * ![Field Notes2](../_docs/assets/week2/Notes-Week2.txt)|
+| Field Notes [GitHub Pages](https://github.com/ultraman-labs/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/week2/Notes-Week2.txt) |
 | * ![Field Notes](../_docs/assets/week2/honeycombtrace1.png) |
 | --- |
 | * After much troubleshooting, successfully produce a backend trace sent from cruddur|
