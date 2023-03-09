@@ -16,6 +16,8 @@
 | --- |
 | * ![HoneyComb Confirmation](../_docs/assets/week2/datasetconfirmation.png) |
 | * ---|
+| * Verifying Cruddur rule & sampling
+| * ![XRAY Sampling](../_docs/assets/week2/xraysamplingrule1.png) |
 | * --- |
 | * --- |
 | * --- |
