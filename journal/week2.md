@@ -19,7 +19,7 @@
 | * Verifying Cruddur sampling rule
 | * ![XRAY Sampling](../_docs/assets/week2/xraysamplingrule1.png) |
 | * --- |
-| * Xray daemon port 200 was available but not being served,i.e, not open. The issue was that the environmental AWS region varialble,in docker-compose.yml was reference this variable as ${AWS_REGION}, instead of ${AWS_DEFAULT_REGION}. A small code fix victory for me! |
+| * Xray daemon port 200 was available but not being served, i.e, not open. The issue was that the environmental AWS region varialble, in docker-compose.yml fiel, was referencing this variable as ${AWS_REGION}, instead of ${AWS_DEFAULT_REGION}. A small code fix victory for me! |
 | * --- |
 | * --- |
 | * --- |
