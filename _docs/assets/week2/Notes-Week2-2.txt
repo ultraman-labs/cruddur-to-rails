@@ -37,9 +37,9 @@
 
 	* ui.honeycomb.io
 
-	* API_cruddur_key : qFpPcYYEvC7MeIX3lzL4lD	
+	* API_cruddur_key : qFpPcYYEvC7MeIX3lz****	
 
-	* API Key         : 0HKiS7w83W5ZNalGjQvbxA
+	* API Key         : 0HKiS7w83W5ZNalGjQ****
 
 	* OTEL is short for Open Telemetry
 
