@@ -26,6 +26,20 @@ from opentelemetry.sdk.trace.export import BatchSpanProcessor
 from aws_xray_sdk.core import xray_recorder
 from aws_xray_sdk.ext.flask.middleware import XRayMiddleware
 
+# CloudWatch Logs ---
+import watchtower
+import logging
+from time import strftime
+
+# Configuring Logger to Use CloudWatch
+# LOGGER = logging.getLogger(__name__)
+# LOGGER.setLevel(logging.DEBUG)
+# console_handler = logging.StreamHandler()
+# cw_handler = watchtower.CloudWatchLogHandler(log_group='cruddur')
+# LOGGER.addHandler(console_handler)
+# LOGGER.addHandler(cw_handler)
+# LOGGER.info("Test Log") 
+
 
 # HoneyComb ----------------------------
 # Initialize tracing and an exporter that can send data to Honeycomb
@@ -36,12 +50,12 @@ trace.set_tracer_provider(provider)
 tracer = trace.get_tracer(__name__)
 
 # X-RAY ---------------------------
-xray_url = os.getenv("AWS_XRAY_URL")
-xray_recorder.configure(service='backend-flask', dynamic_naming=xray_url)
+# xray_url = os.getenv("AWS_XRAY_URL")
+# xray_recorder.configure(service='backend-flask', dynamic_naming=xray_url)
 
 # X-RAY ---------------------------
 app = Flask(__name__)
-XRayMiddleware(app, xray_recorder)
+#XRayMiddleware(app, xray_recorder)
 
 # HoneyComb ----------------------------
 # Initialize automatic instrumentation with Flask
@@ -68,6 +82,12 @@ def data_message_groups():
   else:
     return model['data'], 200
 
+# @app.after_request
+# def after_request(response):
+#     timestamp = strftime('[%Y-%b-%d %H:%M]')
+#     LOGGER.error('%s %s %s %s %s %s', timestamp, request.remote_addr, request.method, request.scheme, request.full_path, response.status)
+#     return response
+
 @app.route("/api/messages/@<string:handle>", methods=['GET'])
 def data_messages(handle):
   user_sender_handle = 'andrewbrown'
@@ -89,6 +109,7 @@ def data_create_message():
 
   model = CreateMessage.run(message=message,user_sender_handle=user_sender_handle,user_receiver_handle=user_receiver_handle)
   if model['errors'] is not None:
+
     return model['errors'], 422
   else:
     return model['data'], 200
