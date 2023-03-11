@@ -29,8 +29,9 @@
 | * --- |
 | *Confirming RollBar Access Token in GitPod |
 | * ![RollBar Acess Token](../_docs/assets/week2/rollbaraccesstoken.png) |
-| ---------------------------------------------------------------------------------------------------------------------------------- |
 | * ---|
+| *Rollbar backend endpoint working |
+| * ![RollBar Acess Token](../_docs/assets/week2/holarollbar.png) |
 | * --- |
 | * --- |
 | --- |
