@@ -24,7 +24,8 @@
 | * Segment from Cruddur |
 | * ![XRAY Sampling](../_docs/assets/week2/segmentstimeline.png) |
 | * --- |
-| * --- |
+| * Impement CloudWatch Logs |
+| * ![XRAY Sampling](../_docs/assets/week2/logstreams.png) |
 | * --- |
 | *--- |
 | ---------------------------------------------------------------------------------------------------------------------------------- |
