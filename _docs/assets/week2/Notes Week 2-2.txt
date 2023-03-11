@@ -1,0 +1,112 @@
+>> GitPod Time/Credits Logs:
+
+   
+
+   (3-06-2023)                            (3-07-2023)						(3-07-2023)
+   Start--> 07:37 pm  Credz 954.44        Start--> 07:18 am  Credz 925.53         Start--> 07:41 pm  Credz 896.38
+   End  --> 10:27 pm  Credz 926.45        End  --> 09:38 pm  Credz 903.84         End  --> 08:07 pm  Credz 892.85
+
+   (3-07-2023)                            (3-08-2023)                             (3-08-2023)
+   Start--> 08:10 pm  Credz 892.85        Start--> 04:30 pm  Credz 884.21         Start--> 07:36 pm  Credz 863.68
+   End  --> 09:26 pm  Credz 885.76        End  --> 06:30 pm  Credz 863.68         End  --> 09:33 pm  Credz 845.84
+
+   (3-09-2023)                            (3-10-2023) 
+   Start--> 02:54 pm  Credz 845.84        Start--> 09:04 pm  Credz 819.80
+   End  --> 05:30 pm  Credz 819.80        End  --> 11:08 pm  Credz 802.03
+
+
+	
+    
+      
+
+>> Odds-n-Ends
+
+	* Strange. With file package-lock.json located at /workspace/aws-bootcamp-cruddur-2023/package-lock.json
+        GitPod workspace alerts that this file is untracked. Gives the option to commit file to GitHub.
+        Not sure if I should.
+
+			{
+  			  "name": "aws-bootcamp-cruddur-2023",
+  			  "lockfileVersion": 2,
+  			  "requires": true,
+  			  "packages": {}
+			}
+
+
+>> Honeycomb
+
+	* ui.honeycomb.io
+
+	* API_cruddur_key : qFpPcYYEvC7MeIX3lzL4lD	
+
+	* API Key         : 0HKiS7w83W5ZNalGjQvbxA
+
+	* OTEL is short for Open Telemetry
+
+	* Need to export with
+
+		$ export HONEYCOMB_API_KEY="qFpPcYYEvC7MeIX3lzL4lD"
+
+
+>> GitPod
+
+	* gp env sets persistent environmental variables that are not lost (erased) upon restarting GitPod workspace.
+
+     * To unset an environment variable in GitPod, use the following cammand:
+
+		$ unset {name of variable}
+
+		Example)  $ unset HONEY_COMB_API_KEY   
+
+	* In GitPod the syntax ${name of environment variable} in a yml file, is how GitPod loads (references) into a
+       a docker file.
+
+	* After commiting code to GitHub, and you get Sync errors, do a "push" by entering the following at the prompt. 
+
+		$ git push
+  
+     * When done with your workspace, be sure to tag the work you have done for the week by entering:
+
+		$ git tag week-x
+		$ git push --tags
+
+
+>> Docker Commands
+
+		$ docker compose -f "docker-compose.yml" down
+
+
+>> Resources
+   
+	* https://opentelemetry.io
+
+
+      
+           
+>> X-Ray
+
+	* In the backend-flask directory install requirements
+
+		$ pip install -r requirements.txt
+    
+		$ aws xray create-group \
+		     --group-name "Cruddur2" \
+                --filter-expression "service(\"backend-flask\")"
+
+	* Sampling determines how much information you want to see
+
+	* When entering the following cammand, it must be from the "aws-bootcamp-cruddur-2023" root directory
+		
+			$ aws xray create-sampling-rule --cli-input-json file://aws/json/xray.json
+
+
+
+
+
+
+
+
+
+
+
+
