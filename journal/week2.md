@@ -25,9 +25,10 @@
 | * ![XRAY Sampling](../_docs/assets/week2/segmentstimeline.png) |
 | * --- |
 | * Impement CloudWatch Logs |
-| * ![XRAY Sampling](../_docs/assets/week2/logstreams.png) |
+| * ![CLoud Watch Logs](../_docs/assets/week2/logstreams.png) |
 | * --- |
-| *--- |
+| *Confirming RollBar Access Token in GitPod |
+| * ![RollBar Acess Token](../_docs/assets/week2/rollbaraccesstoken.png) |
 | ---------------------------------------------------------------------------------------------------------------------------------- |
 | * ---|
 | * --- |
