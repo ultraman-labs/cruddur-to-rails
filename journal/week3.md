@@ -20,8 +20,6 @@
 | * ---|
 | * ![Cognito User](../_docs/assets/week3/creatinguser.png) |
 | * --- |
-| * Xray daemon port 200 was available but not being served, i.e, not open. The issue was that the environmental AWS region varialble, in docker-compose.yml file, was        referencing this variable as "AWS_REGION", instead of "AWS_DEFAULT_REGION'. A small code fix victory for me! |
-| * --- |
 | * Wow! In the sign-in page of Cruddur, I was receiving an error of "User pool us-west-1_gOH8uljSz does not exist."
     This threw me good! I initially thought to look in the docker-compose.yml file for code line that referenced
     the "REACT_APP_AWS_USER_POOLS_ID" environment variable-- which contained the prior "User pool ID" that AWS
