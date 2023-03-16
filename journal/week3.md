@@ -30,6 +30,22 @@
     Restarted the docker file and voila! After going back to the Cruddur sign-in page I was able to log in! 
    ![Another Sigin Error](../_docs/assets/week3/signinerror.png)
 
+<tr><th>Table 1 Heading 1 </th><th>Table 1 Heading 2</th></tr>
+<tr><td>
+
+|Table 1| Middle | Table 2|
+|--|--|--|
+|a| not b|and c |
+
+</td><td>
+
+|b|1|2|3| 
+|--|--|--|--|
+|a|s|d|f|
+
+</td></tr> </table>
+
+
 | * --- |
 | * Impement CloudWatch Logs |
 | * ![CLoud Watch Logs](../_docs/assets/week2/logstreams.png) |
