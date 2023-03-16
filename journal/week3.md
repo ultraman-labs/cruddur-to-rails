@@ -31,11 +31,12 @@
       Restarted the docker file and voila! After going back to the Cruddur sign-in page I was able to log in! </p>
     
    ![Another Sigin Error](../_docs/assets/week3/signinerror.png)  
-
+   ![Preferred User](../_docs/assets/week3/preferredusername.png)
+   
 <br>
  Confirming that, after authenticating, the preferred user name atribute from Cognito was passed onto the Cruddur app.
   ![Preferred User](../_docs/assets/week3/preferredusername.png) 
-  ![Another Sigin Error](../_docs/assets/week3/signinerror.png) 
+
 <br>  
 
 | * --- |
