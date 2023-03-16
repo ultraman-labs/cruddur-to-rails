@@ -30,7 +30,7 @@
       (copied) the new Client ID that Cognito generated, and updated the pertinent variable in docker-compose.yml <br>
       Restarted the docker file and voila! After going back to the Cruddur sign-in page I was able to log in! 
     
-   ![Another Sigin Error](../_docs/assets/week3/signinerror.png)  </p> |
+   ![Another Sigin Error](../_docs/assets/week3/preferredusername.png.png)  </p> 
 
 <br>
 <p> Confirming that, after authenticating, the preferred user name atribute from Cognito was passed onto the Cruddur app. </p>
