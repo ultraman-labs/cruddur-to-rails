@@ -37,7 +37,7 @@
    
 <br><br><br><br><br><br>
 ---
-  Cruddur ptompting to enter confirmation code sent to my email. <br><br><br><br><br><br>
+  Cruddur prompting to enter confirmation code sent to my email. <br><br><br><br>
  ![Confirm Email](../_docs/assets/week3/confirmemail.png) 
  
  
