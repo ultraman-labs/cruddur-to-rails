@@ -45,7 +45,7 @@
 
 	* Need to export with
 
-		$ export HONEYCOMB_API_KEY="qFpPcYYEvC7MeIX3lzL4lD"
+		$ export HONEYCOMB_API_KEY="qFpPcYYEvC7MeIX3lz****"
 
 
 >> GitPod
