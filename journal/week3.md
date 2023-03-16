@@ -6,7 +6,7 @@
 # Progress/reference and "Ah-ha" notes to self
 | *********************** |
 | --- |
-| * [Field Notes](https://github.com/ultraman-labs/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/week3/Notes-Week3.txt)  |
+| * [Field Notes](https://github.com/ultraman-labs/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/week3/Notes-Week3.txt) |
 | --- |
 | ** Using Chrome's DevTools to troubleshoot un-authenticated user |
 | --- |
