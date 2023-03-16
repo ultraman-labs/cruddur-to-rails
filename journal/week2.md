@@ -12,7 +12,7 @@
 | --- |
 | * ![HoneyComb Trace](../_docs/assets/week2/honeycombtrace1.png) |
 | --- |
-| * Received HonyComb email confirmation of trace from the backend-flask dataset|
+| * Received HoneyComb email confirmation of trace from the backend-flask dataset|
 | --- |
 | * ![HoneyComb Confirmation](../_docs/assets/week2/datasetconfirmation.png) |
 | * ---|
