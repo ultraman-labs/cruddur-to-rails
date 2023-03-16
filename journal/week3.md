@@ -38,8 +38,8 @@
 <br><br><br><br><br><br>
 
 | * --- |
-| *Confirming RollBar Access Token in GitPod |
-| * ![RollBar Acess Token](../_docs/assets/week2/rollbaraccesstoken.png) |
+  Cruddur ptompting to enter confirmation code sent to my email. <br><br><br><br><br><br>
+ ![Confirm Email](../_docs/assets/week3/confirmemail.png) 
 | * ---|
 | * Rollbar backend endpoint working |
 | * ![RollBar Acess Token](../_docs/assets/week2/holarollbar.png) |
