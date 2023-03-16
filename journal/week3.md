@@ -32,8 +32,7 @@
     
    ![Another Sigin Error](../_docs/assets/week3/signinerror.png)
 
-
-
+<br>
 
 | --- |
 | * Impement CloudWatch Logs |
