@@ -20,8 +20,8 @@
 | * ---|
 | * ![Cognito User](../_docs/assets/week3/creatinguser.png) |
 | * --- |
-|<p> --- <br>  
-    * Wow! In the sign-in page of Cruddur, I was receiving an error of "User pool us-west-1_gOH8uljSz does not exist." 
+<p> --- <br>  
+    * Wow! In the sign-in page of Cruddur, I was receiving an error of "User pool us-west-1_gOH8uljSz does not exist." <br>
       This threw me good! I initially thought to look in the docker-compose.yml file for code line that referenced <br>
       the "REACT_APP_AWS_USER_POOLS_ID" environment variable-- which contained the prior "User pool ID" that AWS <br>
       Cognito generated. After updating this variable, I went back and restarted the docker-compose.ym file. But <br>
