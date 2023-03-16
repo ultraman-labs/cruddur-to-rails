@@ -44,11 +44,13 @@
  ---
 >> ** In Cognito, verifying the status of of the user account as enabled and user email as confirmed. <br><br><br><br>
       ![Confirming](../_docs/assets/week3/confirmuser.png) 
-| * --- |
-| * Rollbar capturing janked error |
-| * ![RollBar Acess Token](../_docs/assets/week2/rollbarjankederror.png) |
-| * --- |
-| --- |
+
+<br><br><br><br><br><br>
+ ---
+>> ** Testing Cruddur's password recovery page. It Workded! <br><br><br><br>
+  ![Password Recovery](../_docs/assets/week3/pwrecovery.png)
+
+
 
 
 
