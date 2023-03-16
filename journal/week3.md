@@ -21,23 +21,23 @@
 | * ![Cognito User](../_docs/assets/week3/creatinguser.png) |
 | * --- | |
 <p> --- <br>  
-    * Wow! In the sign-in page of Cruddur, I was receiving an error of "User pool us-west-1_gOH8uljSz does not exist." <br>
-      This threw me good! I initially thought to look in the docker-compose.yml file for code line that referenced <br>
-      the "REACT_APP_AWS_USER_POOLS_ID" environment variable-- which contained the prior "User pool ID" that AWS <br>
-      Cognito generated. After updating this variable, I went back and restarted the docker-compose.ym file. But <br>
-      the sign-in error persisted. Hmmm...what the strange tacos was going on!? Okay, somehow I made the cerbral <br>
-      leap of thinking that perhaps the REACT_APP_CLIENT_ID env var had change as well--- well it did! So I grabbed <br>
-      (copied) the new Client ID that Cognito generated, and updated the pertinent variable in docker-compose.yml <br>
-      Restarted the docker file and voila! After going back to the Cruddur sign-in page I was able to log in! </p>
+    >> Wow! In the sign-in page of Cruddur, I was receiving an error of "User pool us-west-1_gOH8uljSz does not exist." <br>
+       This threw me good! I initially thought to look in the docker-compose.yml file for code line that referenced <br>
+       the "REACT_APP_AWS_USER_POOLS_ID" environment variable-- which contained the prior "User pool ID" that AWS <br>
+       Cognito generated. After updating this variable, I went back and restarted the docker-compose.ym file. But <br>
+       the sign-in error persisted. Hmmm...what the strange tacos was going on!? Okay, somehow I made the cerbral <br>
+       leap of thinking that perhaps the REACT_APP_CLIENT_ID env var had change as well--- well it did! So I grabbed <br>
+       (copied) the new Client ID that Cognito generated, and updated the pertinent variable in docker-compose.yml <br>
+       Restarted the docker file and voila! After going back to the Cruddur sign-in page I was able to log in! </p>
     
    ![Another Sigin Error](../_docs/assets/week3/signinerror.png)  <br><br><br><br><br><br>
    ---
-   Confirming that, after authenticating, the preferred user name atribute from Cognito was passed onto the Cruddur app.<br><br> 
-  ![Preferred User](../_docs/assets/week3/preferredusername.png)
+  >> Confirming that, after authenticating, the preferred user name atribute from Cognito was passed onto the Cruddur app.<br><br> 
+     ![Preferred User](../_docs/assets/week3/preferredusername.png)
    
 <br><br><br><br><br><br>
 ---
-  Cruddur prompting to enter confirmation code sent to my email. <br><br><br><br>
+ >> Cruddur prompting to enter confirmation code sent to my email. <br><br><br><br>
  ![Confirm Email](../_docs/assets/week3/confirmemail.png) 
  
  
