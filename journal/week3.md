@@ -34,9 +34,7 @@
 
 <br>
 <p> Confirming that, after authenticating, the preferred user name atribute from Cognito was passed onto the Cruddur app. </p> <br>
-
-<br>
-  ![CLoud Watch Logs](../_docs/assets/week3/preferredusername.png) 
+  ![Preferred User](../_docs/assets/week3/preferredusername.png) 
   
 | * --- |
 | *Confirming RollBar Access Token in GitPod |
