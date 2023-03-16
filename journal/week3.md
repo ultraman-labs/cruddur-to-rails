@@ -19,7 +19,7 @@
 | * Creating user in AWS Cognito
 | * ---|
 | * ![Cognito User](../_docs/assets/week3/creatinguser.png) |
-| * --- |
+| * --- | |
 <p> --- <br>  
     * Wow! In the sign-in page of Cruddur, I was receiving an error of "User pool us-west-1_gOH8uljSz does not exist." <br>
       This threw me good! I initially thought to look in the docker-compose.yml file for code line that referenced <br>
@@ -35,7 +35,7 @@
 
 
 
-| * --- |
+| --- |
 | * Impement CloudWatch Logs |
 | * ![CLoud Watch Logs](../_docs/assets/week2/logstreams.png) |
 | * --- |
