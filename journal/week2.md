@@ -14,7 +14,7 @@
 | --- |
 | * Received HoneyComb email confirmation of trace from the backend-flask dataset|
 | --- |
-| * ![HoneyComb Confirmation](../_docs/assets/week2/datasetconfirmation.png) |
+| * ![HoneyComb Confirmation](../_docs/assets/week2/datasetconfirmation2.png) |
 | * ---|
 | * Verifying Cruddur sampling rule
 | * ![XRAY Sampling](../_docs/assets/week2/xraysamplingrule1.png) |
