@@ -36,9 +36,8 @@
    ![Preferred User](../_docs/assets/week3/preferredusername.png)
    
 <br>
-<span style="font-size:80px">
+
  Confirming that, after authenticating, the preferred user name atribute from Cognito was passed onto the Cruddur app.
-</span>
   ![Preferred User](../_docs/assets/week3/preferredusername.png) 
 
 <br>  
