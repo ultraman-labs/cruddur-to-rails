@@ -33,10 +33,11 @@
    ![Another Sigin Error](../_docs/assets/week3/signinerror.png)
 
 <br>
+<p> Confirming that, after authenticating, the preferred user name atribute from Cognito was passed onto the Cruddur app. </p> <br>
 
-| --- |
-| * Impement CloudWatch Logs |
-| * ![CLoud Watch Logs](../_docs/assets/week2/logstreams.png) |
+<br>
+  ![CLoud Watch Logs](../_docs/assets/week3/preferredusername.png) 
+  
 | * --- |
 | *Confirming RollBar Access Token in GitPod |
 | * ![RollBar Acess Token](../_docs/assets/week2/rollbaraccesstoken.png) |
