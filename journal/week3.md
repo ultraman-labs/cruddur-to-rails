@@ -12,12 +12,12 @@
 | --- |
 | * ![Sigin Error](../_docs/assets/week3/goodsignuperror.png) |
 | --- |
-| * Received the expected signin error, now time to dig-in deeper|
+| * Received the expected signin error, now time to setup Cognito user and user pool.|
 | --- |
 | * ![Happy Error](../_docs/assets/week3/happyerror.png) |
 | * ---|
-| * Verifying Cruddur sampling rule
-| * ![XRAY Sampling](../_docs/assets/week2/xraysamplingrule1.png) |
+| * Creating user in AWS Cognito
+| * ![Cognito User](../_docs/assets/week3/creatinguser.png) |
 | * --- |
 | * Xray daemon port 200 was available but not being served, i.e, not open. The issue was that the environmental AWS region varialble, in docker-compose.yml file, was        referencing this variable as "AWS_REGION", instead of "AWS_DEFAULT_REGION'. A small code fix victory for me! |
 | * --- |
