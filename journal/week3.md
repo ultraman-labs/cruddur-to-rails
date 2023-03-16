@@ -40,10 +40,10 @@
  >> Cruddur prompting to enter confirmation code sent to my email. <br><br><br><br>
  ![Confirm Email](../_docs/assets/week3/confcode.png) 
  
- 
-| * ---|
-| * Rollbar backend endpoint working |
-| * ![RollBar Acess Token](../_docs/assets/week2/holarollbar.png) |
+ <br><br><br><br><br><br>
+ ---
+>> In Cognito, verifying the status of of the user account as enabled and user email as confirmed.
+  ![Confirming](../_docs/assets/week3/confirmuser.png) 
 | * --- |
 | * Rollbar capturing janked error |
 | * ![RollBar Acess Token](../_docs/assets/week2/rollbarjankederror.png) |
