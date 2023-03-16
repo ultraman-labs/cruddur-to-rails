@@ -30,7 +30,7 @@
     Restarted the docker file and voila! After going back to the Cruddur sign-in page I was able to log in! 
    ![Another Sigin Error](../_docs/assets/week3/signinerror.png)
 
-<tr><th>Table 1 Heading 1 </th><th>Table 1 Heading 2</th></tr>
+<tr><th>Table 1 Heading 1</th></tr>
 <tr><td>
 
 |Table 1| Middle | Table 2|
