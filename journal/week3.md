@@ -10,7 +10,7 @@
 | --- |
 | * Using Chrome's DevTools to troubleshoot un-authenticated user |
 | --- |
-| * ![Sigin Error](../_docs/assets/week2/goodsignuperror.png) |
+| * ![Sigin Error](../_docs/assets/week3/goodsignuperror.png) |
 | --- |
 | * Received HoneyComb email confirmation of trace from the backend-flask dataset|
 | --- |
