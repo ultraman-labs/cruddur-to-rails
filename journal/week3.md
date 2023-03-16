@@ -6,15 +6,15 @@
 # Progress/reference and "Ah-ha" notes to self
 | *********************** |
 | --- |
-| * [Field Notes](https://github.com/ultraman-labs/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/week2/Notes-Week2-2.txt) |
+| * [Field Notes](https://github.com/ultraman-labs/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/week3/Notes-Week3.txt) |
 | --- |
 | * Using Chrome's DevTools to troubleshoot un-authenticated user |
 | --- |
 | * ![Sigin Error](../_docs/assets/week3/goodsignuperror.png) |
 | --- |
-| * Received HoneyComb email confirmation of trace from the backend-flask dataset|
+| * Received the expected signin error, now time to dig-in deeper|
 | --- |
-| * ![HoneyComb Confirmation](../_docs/assets/week2/datasetconfirmation2.png) |
+| * ![Happy Error](../_docs/assets/week3/happyerror.png) |
 | * ---|
 | * Verifying Cruddur sampling rule
 | * ![XRAY Sampling](../_docs/assets/week2/xraysamplingrule1.png) |
