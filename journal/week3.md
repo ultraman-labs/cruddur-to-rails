@@ -32,8 +32,8 @@
     
    ![Another Sigin Error](../_docs/assets/week3/signinerror.png)  <br><br><br><br>
    
-   <h4>Confirming that, after authenticating, the preferred user name atribute from Cognito was passed onto the Cruddur app.
-   ![Preferred User](../_docs/assets/week3/preferredusername.png)</h4>
+   Confirming that, after authenticating, the preferred user name atribute from Cognito was passed onto the Cruddur app.<br>
+   ![Preferred User](../_docs/assets/week3/preferredusername.png)
    
 <br>
  Confirming that, after authenticating, the preferred user name atribute from Cognito was passed onto the Cruddur app. 
