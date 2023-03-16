@@ -8,18 +8,18 @@
 | --- |
 | * [Field Notes](https://github.com/ultraman-labs/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/week3/Notes-Week3.txt) |
 | --- |
-| * Using Chrome's DevTools to troubleshoot un-authenticated user |
+| >> Using Chrome's DevTools to troubleshoot un-authenticated user |
 | --- |
 | * ![Sigin Error](../_docs/assets/week3/goodsignuperror.png) |
 | --- |
-| * Received the expected signin error, now time to setup Cognito user and user pool.|
+| >> Received the expected signin error, now time to setup Cognito user and user pool.|
 | --- |
 | * ![Happy Error](../_docs/assets/week3/happyerror.png) |
 | * ---|
-| * Creating user in AWS Cognito
+| >> Creating user in AWS Cognito
 | * ---|
 | * ![Cognito User](../_docs/assets/week3/creatinguser.png) |
-| * --- | |
+| * --- | 
 <p> --- <br>  
     >> Wow! In the sign-in page of Cruddur, I was receiving an error of "User pool us-west-1_gOH8uljSz does not exist." <br>
        This threw me good! I initially thought to look in the docker-compose.yml file for code line that referenced <br>
