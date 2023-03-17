@@ -55,7 +55,7 @@
 
 <br><br><br><br><br><br>
  ---
->> ** Testing Cruddur's password recovery page. It Workded! <br><br><br><br>
+>> ** Testing Cruddur's password recovery page. It Worked! <br><br><br><br>
   ![Password Recovery](../_docs/assets/week3/pwrecovery.png)
 
 <br><br><br><br><br><br>
