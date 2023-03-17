@@ -37,6 +37,14 @@
    
 <br><br><br><br><br><br>
 ---
+ >> ** Received email confirmaition code. <br><br><br><br>
+ ![Confirm Email](../_docs/assets/week3/verifycode2.png) 
+ 
+ <br><br><br><br><br><br>
+ ---   
+ 
+<br><br><br><br><br><br>
+---
  >> ** Cruddur prompting to enter confirmation code sent to my email. <br><br><br><br>
  ![Confirm Email](../_docs/assets/week3/confcode.png) 
  
