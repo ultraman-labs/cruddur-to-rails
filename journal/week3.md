@@ -39,12 +39,6 @@
 ---
 
 
->> ** Successfully resetting user password. <br><br><br><br>
-  ![Password Recovery](../_docs/assets/week3/pwresetgood.png)
-
-<br><br><br><br><br><br>
- ---   
-
  >> ** Received email confirmaition code. <br><br><br><br>
  ![Confirm Email](../_docs/assets/week3/verifycode2.png) 
  
@@ -67,4 +61,9 @@
 <br><br><br><br><br><br>
  ---
 
+>> ** Successfully resetting user password. <br><br><br><br>
+  ![Password Recovery](../_docs/assets/week3/pwresetgood.png)
+
+<br><br><br><br><br><br>
+ ---   
 
