@@ -3,7 +3,7 @@ from flask import request
 from flask_cors import CORS, cross_origin
 import os
 
-from services.home_activities import *
+##from services.home_activities import *
 from services.user_activities import *
 from services.create_activity import *
 from services.create_reply import *
@@ -14,7 +14,7 @@ from services.create_message import *
 from services.show_activity import *
 from services.user_notifications import *
 
-from lib.cognito_jwt_token import CognitoJwtToken, extract_access_token, TokenVerifyError
+##from lib.cognito_jwt_token import CognitoJwtToken, extract_access_token, TokenVerifyError
 
 # HoneyComb ----------------------------
 from opentelemetry import trace
