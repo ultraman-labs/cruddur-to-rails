@@ -9,6 +9,7 @@ if [ "$1" = "prod" ]; then
   echo "Using production"
   CON_URL=$PROD_CONNECTION_URL
 else
+  echo "Using localhost"
   CON_URL=$CONNECTION_URL
 fi
 
