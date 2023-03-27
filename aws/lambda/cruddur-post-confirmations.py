@@ -19,7 +19,7 @@ def lambda_handler(event, context):
           email, 
           handle, 
           cognito_user_id
-        ) 
+          ) 
         VALUES(
           '{user_display_name}', 
           '{user_email}',
