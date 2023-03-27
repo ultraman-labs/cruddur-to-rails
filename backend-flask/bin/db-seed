@@ -11,9 +11,10 @@ seed_path="$(realpath .)/db/seed.sql"
 echo $seed_path
 
 if [ "$1" = "prod" ]; then
-  echo "Using production"
+  echo "Using production seeding"
   URL=$PROD_CONNECTION_URL
 else
+  echo "Using localhost seeding"
   URL=$CONNECTION_URL
 fi
 
