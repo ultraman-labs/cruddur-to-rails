@@ -10,7 +10,7 @@ class Db:
         self.init_pool()
 
     def init_pool(self):
-        connection_url = os.getenv("DB_CONNECTION_STRING")
+        connection_url = os.getenv("CONNECTION_URL")
         self.pool = ConnectionPool(connection_url)
 
     def template(self, *args):
