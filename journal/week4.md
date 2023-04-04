@@ -3,7 +3,7 @@
 ## Ultra Man (Tony)
 
 
-# Progress/reference and "Ah-ha" notes to self
+# Progress/reference and "Ah-ha" notes to self.
 | *********************** |
 | --- |
 | * [Field Notes](https://github.com/ultraman-labs/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/week4/Notes-Week4.txt) |
