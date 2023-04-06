@@ -8,9 +8,9 @@
 | --- |
 | * [Field Notes](https://github.com/ultraman-labs/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/week4/Notes-Week4.txt) |
 | --- |
-| ** Using Chrome's DevTools to troubleshoot un-authenticated user |
+| ** Created the Cruddur DB instance |
 | --- |
-| * ![Sigin Error](../_docs/assets/week3/goodsignuperror.png) |
+| * ![Cruddur DB Instance](../_docs/assets/week4/rdscruddur.png) |
 | --- |
 | ** Received the expected signin error, now time to setup Cognito user and user pool.|
 | --- |
