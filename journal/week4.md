@@ -136,6 +136,19 @@
 <br><br><br><br><br><br>
  ---
  
+ >> ** Successfully retrieved new Cruddur users <br><br><br><br>
+  ![DB Connect Script](../_docs/assets/week4/verifieddbuserentry2.png)
+
+<br><br><br><br><br><br>
+ ---
+ 
+ >> ** Investigating CloudWatch logs for any errors. There were none! <br><br><br><br>
+  ![DB Connect Script](../_docs/assets/week4/lognoerrors2.png)
+
+<br><br><br><br><br><br>
+ ---
+ 
+ 
  
  
  
