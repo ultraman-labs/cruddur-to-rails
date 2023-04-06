@@ -111,15 +111,9 @@
 
 <br><br><br><br><br><br>
  ---
-
- >> ** Adding the value for connection url to AWS environmental variable for Lambda functionality. <br><br><br><br>
-  ![DB Connect Script](../_docs/assets/week4/addingenvvar.png)
-
-<br><br><br><br><br><br>
- ---
  
- >> ** Adding the value for connection url to AWS environmental variable for Lambda functionality. <br><br><br><br>
-  ![DB Connect Script](../_docs/assets/week4/addingenvvar.png)
+ >> ** Retrieving email confirmation code. <br><br><br><br>
+  ![DB Connect Script](../_docs/assets/week4/confirmationcode.png)
 
 <br><br><br><br><br><br>
  ---
