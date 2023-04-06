@@ -58,4 +58,10 @@
   ![DB Connect Script](../_docs/assets/week4/dbconnect.png)
 
 <br><br><br><br><br><br>
- ---   
+ --- 
+ 
+ >> ** Using the command \dt to list the users and activities tables. <br><br><br><br>
+  ![DB Connect Script](../_docs/assets/week4/listingtables.png)
+
+<br><br><br><br><br><br>
+ --- 
