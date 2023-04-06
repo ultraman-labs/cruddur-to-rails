@@ -44,18 +44,18 @@
  <br><br><br><br><br><br>
  ---
 >> ** Testing the bash db-create script. <br><br><br><br>
-      ![Confirming](../_docs/assets/week4/createdb.png) 
+      ![Creating Cruddur DB](../_docs/assets/week4/createdb.png) 
 
 <br><br><br><br><br><br>
  ---
->> ** Testing the bash db-create script. <br><br><br><br>
-  ![Password Recovery](../_docs/assets/week4/createdb.png)
-
-<br><br><br><br><br><br>
- ---
-
 >> ** Testing the bash db-schema-load script. <br><br><br><br>
-  ![Password Recovery](../_docs/assets/week4/dbschemaload.png)
+  ![Schema Loading](../_docs/assets/week4/dbschemaload.png)
+
+<br><br><br><br><br><br>
+ ---
+
+>> ** Testing the bash db-connect script. <br><br><br><br>
+  ![DB Connect Script](../_docs/assets/week4/dbconnect.png)
 
 <br><br><br><br><br><br>
  ---   
