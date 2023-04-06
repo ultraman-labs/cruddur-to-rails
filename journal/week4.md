@@ -21,7 +21,7 @@
 | * ![Lis DBs](../_docs/assets/week4/dblist.png) |
 | * --- | 
 <p> --- <br>  
-    **Connect to postgres then create database buddy!  </p>
+    **Connect to postgres first, then create database buddy!  </p>
     
    ![Cruddur DB Listed](../_docs/assets/week4/postgrescreatedb1.png)  <br><br><br><br><br><br>
    ---
