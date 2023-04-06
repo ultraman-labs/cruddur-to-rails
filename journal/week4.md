@@ -38,8 +38,8 @@
  <br><br><br><br><br><br>
  ---   
  
- >> ** Cruddur prompting to enter confirmation code sent to my email. <br><br><br><br>
- ![Confirm Email](../_docs/assets/week3/confcode.png) 
+ >> ** Testing the bash db-drop script. <br><br><br><br>
+ ![Drop DB](../_docs/assets/week4/dropdb.png) 
  
  <br><br><br><br><br><br>
  ---
