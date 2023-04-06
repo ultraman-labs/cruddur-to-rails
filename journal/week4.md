@@ -32,8 +32,8 @@
 ---
 
 
- >> ** Received email confirmaition code. <br><br><br><br>
- ![Confirm Email](../_docs/assets/week3/verifycode2.png) 
+ >> ** Exporting the connection url to GitPod environment. <br><br><br><br>
+ ![Connection URL](../_docs/assets/week4/autopsqllogin.png) 
  
  <br><br><br><br><br><br>
  ---   
