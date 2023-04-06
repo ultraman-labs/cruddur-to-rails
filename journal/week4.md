@@ -84,12 +84,6 @@
 <br><br><br><br><br><br>
  ---
 
->> ** Editing security group inbound rule for GitPod. <br><br><br><br>
-  ![DB Connect Script](../_docs/assets/week4/beforesginboundrule.png)
-
-<br><br><br><br><br><br>
- ---
-
  >> ** Testing the connection to the production database. <br><br><br><br>
   ![DB Connect Script](../_docs/assets/week4/successprodconnect2.png)
 
