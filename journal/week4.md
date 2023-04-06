@@ -23,7 +23,7 @@
 <p> --- <br>  
     **Connect to postgres then create database buddy!  </p>
     
-   ![Cruddur DB Listed](../_docs/assets/week3/signinerror.png)  <br><br><br><br><br><br>
+   ![Cruddur DB Listed](../_docs/assets/week4/postgrescreatedb1.png)  <br><br><br><br><br><br>
    ---
   >> ** Confirming that, after authenticating, the preferred user name atribute from Cognito was passed onto the Cruddur app.<br><br> 
        ![Preferred User](../_docs/assets/week4/postgrescreatedb1.png)
