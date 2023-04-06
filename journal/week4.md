@@ -28,7 +28,7 @@
        the sign-in error persisted. Hmmm...what the strange tacos was going on!? Okay, somehow I made the cerbral <br>
        leap of thinking that perhaps the REACT_APP_CLIENT_ID env var had change as well--- well it did! So I grabbed <br>
        (copied) the new Client ID that Cognito generated, and updated the pertinent variable in docker-compose.yml <br>
-       Restarted the docker file and voila! After going back to the Cruddur sign-in page I was able to log in! </p>
+       Restarted the docker file and voila! After going back to the Cruddur sign-in page I was able to log in!  </p>
     
    ![Another Sigin Error](../_docs/assets/week3/signinerror.png)  <br><br><br><br><br><br>
    ---
