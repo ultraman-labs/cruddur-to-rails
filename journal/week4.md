@@ -65,3 +65,21 @@
 
 <br><br><br><br><br><br>
  --- 
+
+>> ** Seeding the data into the tables. <br><br><br><br>
+  ![DB Connect Script](../_docs/assets/week4/dbseeddata.png)
+
+<br><br><br><br><br><br>
+ --- 
+ 
+ >> ** False negative-- Cruddur DB instance did spin up successfully. <br><br><br><br>
+  ![DB Connect Script](../_docs/assets/week4/awsrdslied.png)
+
+<br><br><br><br><br><br>
+ --- 
+ 
+ >> ** Seeding the data into the tables. <br><br><br><br>
+  ![DB Connect Script](../_docs/assets/week4/awsrdslied.png)
+
+<br><br><br><br><br><br>
+ ---
