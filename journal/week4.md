@@ -18,7 +18,7 @@
 | * ---|
 | ** Listing the database before creating the Cruddur DB.
 | * ---|
-| * ![Lis DBs](../_docs/assets/week4/dblist.png) |
+| * ![List DBs](../_docs/assets/week4/dblist.png) |
 | * --- | 
 <p> --- <br>  
     **Connect to postgres first, then create database buddy!  </p>
