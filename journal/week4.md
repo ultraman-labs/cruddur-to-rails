@@ -104,7 +104,23 @@
 
 ---
 
- >> ** Testing the connection to the production database. <br><br><br><br>
+ >> ** Setting GitPod's environmental variables for DB security group identification. <br><br><br><br>
+  ![DB Connect Script](../_docs/assets/week4/successprodconnect.png)
+
+<br><br><br><br><br><br>
+ ---
+ 
+ ---
+
+ >> ** Setting GitPod's environmental variables for DB security group identification. <br><br><br><br>
+  ![DB Connect Script](../_docs/assets/week4/successprodconnect.png)
+
+<br><br><br><br><br><br>
+ ---
+ 
+ ---
+
+ >> ** Setting GitPod's environmental variables for DB security group identification. <br><br><br><br>
   ![DB Connect Script](../_docs/assets/week4/successprodconnect.png)
 
 <br><br><br><br><br><br>
