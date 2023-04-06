@@ -112,8 +112,8 @@
  
  ---
 
- >> ** Setting GitPod's environmental variables for DB security group identification. <br><br><br><br>
-  ![DB Connect Script](../_docs/assets/week4/successprodconnect.png)
+ >> ** Adding description to security group rule. <br><br><br><br>
+  ![DB Connect Script](../_docs/assets/week4/descriptionwentthrough.png)
 
 <br><br><br><br><br><br>
  ---
