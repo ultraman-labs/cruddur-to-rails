@@ -16,9 +16,9 @@
 | --- |
 | * ![Availability Zone](../_docs/assets/week4/availabilityzone.png) |
 | * ---|
-| ** Creating user in AWS Cognito
+| ** Listing the database before creating the Cruddur DB.
 | * ---|
-| * ![Cognito User](../_docs/assets/week3/creatinguser.png) |
+| * ![Lis DBs](../_docs/assets/week4/dblist.png) |
 | * --- | 
 <p> --- <br>  
     ** Wow! In the sign-in page of Cruddur, I was receiving an error of "User pool us-west-1_gOH8uljSz does not exist." <br>
