@@ -43,7 +43,7 @@
  
  <br><br><br><br><br><br>
  ---
->> ** In Cognito, verifying the status of of the user account as enabled and user email as confirmed. <br><br><br><br>
+>> ** In Cognito, verifying the status of of the user account as enabled and user email as  confirmed. <br><br><br><br>
       ![Confirming](../_docs/assets/week3/confirmuser.png) 
 
 <br><br><br><br><br><br>
