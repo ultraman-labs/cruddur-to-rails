@@ -96,10 +96,19 @@
 <br><br><br><br><br><br>
  ---
 
+ >> ** Listing production database. <br><br><br><br>
+  ![DB Connect Script](../_docs/assets/week4/listofproddbs.png)
+
+<br><br><br><br><br><br>
+ ---
+
+---
+
  >> ** Testing the connection to the production database. <br><br><br><br>
   ![DB Connect Script](../_docs/assets/week4/successprodconnect.png)
 
 <br><br><br><br><br><br>
  ---
-
+ 
+ 
 
