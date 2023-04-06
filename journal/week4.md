@@ -78,8 +78,20 @@
 <br><br><br><br><br><br>
  --- 
  
- >> ** Seeding the data into the tables. <br><br><br><br>
-  ![DB Connect Script](../_docs/assets/week4/awsrdslied.png)
+ >> ** Editing security group inbound rule for GitPod. <br><br><br><br>
+  ![DB Connect Script](../_docs/assets/week4/beforesginboundrule.png)
+
+<br><br><br><br><br><br>
+ ---
+
+>> ** Editing security group inbound rule for GitPod. <br><br><br><br>
+  ![DB Connect Script](../_docs/assets/week4/beforesginboundrule.png)
+
+<br><br><br><br><br><br>
+ ---
+ 
+ >> ** Editing security group inbound rule for GitPod. <br><br><br><br>
+  ![DB Connect Script](../_docs/assets/week4/beforesginboundrule.png)
 
 <br><br><br><br><br><br>
  ---
