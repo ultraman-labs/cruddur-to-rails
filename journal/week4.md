@@ -25,8 +25,8 @@
     
    ![Cruddur DB Listed](../_docs/assets/week4/postgrescreatedb1.png)  <br><br><br><br><br><br>
    ---
-  >> ** Confirming that, after authenticating, the preferred user name atribute from Cognito was passed onto the Cruddur app.<br><br> 
-       ![Preferred User](../_docs/assets/week4/postgrescreatedb1.png)
+  >> ** Moving towards automizing postgres password<br><br> 
+       ![Auto PW](../_docs/assets/week4/autopwpostgres.png)
    
 <br><br><br><br><br><br>
 ---
