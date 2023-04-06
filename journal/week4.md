@@ -12,9 +12,9 @@
 | --- |
 | * ![Cruddur DB Instance](../_docs/assets/week4/rdscruddur.png) |
 | --- |
-| ** Received the expected signin error, now time to setup Cognito user and user pool.|
+| ** Verifying the availbility zone for my region.|
 | --- |
-| * ![Happy Error](../_docs/assets/week3/happyerror.png) |
+| * ![Availability Zone](../_docs/assets/week3/availabilityzone.png) |
 | * ---|
 | ** Creating user in AWS Cognito
 | * ---|
