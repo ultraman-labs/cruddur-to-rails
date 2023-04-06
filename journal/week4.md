@@ -48,8 +48,8 @@
 
 <br><br><br><br><br><br>
  ---
->> ** Testing Cruddur's password recovery page. It Worked! <br><br><br><br>
-  ![Password Recovery](../_docs/assets/week3/pwrecovery.png)
+>> ** Testing the bash db-create script. <br><br><br><br>
+  ![Password Recovery](../_docs/assets/week4/createdb.png)
 
 <br><br><br><br><br><br>
  ---
