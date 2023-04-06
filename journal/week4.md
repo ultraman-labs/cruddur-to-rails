@@ -105,7 +105,7 @@
 ---
 
  >> ** Setting GitPod's environmental variables for DB security group identification. <br><br><br><br>
-  ![DB Connect Script](../_docs/assets/week4/successprodconnect.png)
+  ![DB Connect Script](../_docs/assets/week4/returntrue2.png)
 
 <br><br><br><br><br><br>
  ---
