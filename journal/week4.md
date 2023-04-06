@@ -118,11 +118,24 @@
 <br><br><br><br><br><br>
  ---
  
- >> ** Adding the value for connection url to AWS environmental variable for Lambda functionality. <br><br><br><br>
-  ![DB Connect Script](../_docs/assets/week4/addingenvvar.png)
+ >> ** Logging into Cruddur. <br><br><br><br>
+  ![DB Connect Script](../_docs/assets/week4/confirmemail.png)
 
 <br><br><br><br><br><br>
  ---
+ 
+ >> ** Logging into Cruddur. <br><br><br><br>
+  ![DB Connect Script](../_docs/assets/week4/confirmemail.png)
+
+<br><br><br><br><br><br>
+ ---
+ 
+ >> ** Logging into Cruddur. <br><br><br><br>
+  ![DB Connect Script](../_docs/assets/week4/confirmemail.png)
+
+<br><br><br><br><br><br>
+ ---
+ 
  
  
  
