@@ -43,8 +43,8 @@
  
  <br><br><br><br><br><br>
  ---
->> ** In Cognito, verifying the status of of the user account as enabled and user email as  confirmed. <br><br><br><br>
-      ![Confirming](../_docs/assets/week3/confirmuser.png) 
+>> ** Testing the bash db-create script. <br><br><br><br>
+      ![Confirming](../_docs/assets/week4/createdb.png) 
 
 <br><br><br><br><br><br>
  ---
@@ -54,8 +54,8 @@
 <br><br><br><br><br><br>
  ---
 
->> ** Successfully resetting user password. <br><br><br><br>
-  ![Password Recovery](../_docs/assets/week3/pwresetgood.png)
+>> ** Testing the bash db-schema-load script. <br><br><br><br>
+  ![Password Recovery](../_docs/assets/week4/dbschemaload.png)
 
 <br><br><br><br><br><br>
  ---   
