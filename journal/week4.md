@@ -14,7 +14,7 @@
 | --- |
 | ** Verifying the availbility zone for my region.|
 | --- |
-| * ![Availability Zone](../_docs/assets/week3/availabilityzone.png) |
+| * ![Availability Zone](../_docs/assets/week4/availabilityzone.png) |
 | * ---|
 | ** Creating user in AWS Cognito
 | * ---|
