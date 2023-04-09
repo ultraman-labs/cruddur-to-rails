@@ -3,11 +3,11 @@ services:
   backend-flask:
     environment:
     
-      # Production Database Connection
-      CONNECTION_URL: "${PROD_CONNECTION_URL}"
+      # Prod DB Connection
+      #CONNECTION_URL: "${PROD_CONNECTION_URL}"
       
-      # Local Database Connection
-      #CONNECTION_URL: "postgresql://postgres:password@db:5432/cruddur"
+      # Local DB Connection
+      CONNECTION_URL: "postgresql://postgres:password@db:5432/cruddur"
       
       # Local GitPod Frontend & Backend Connection URL & Ports
       FRONTEND_URL: "https://3000-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}"
