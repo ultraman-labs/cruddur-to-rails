@@ -28,7 +28,9 @@ services:
       ROLLBAR_ACCESS_TOKEN: "${ROLLBAR_ACCESS_TOKEN}"
       
       # AWS Cognito IDs
-      AWS_COGNITO_USER_POOL_ID: "us-west-1_rPiNkqPbW"
+      # Hard coded
+      # AWS_COGNITO_USER_POOL_ID: "us-west-1_rPiNkqPbW"
+      AWS_COGNITO_USER_POOL_ID: "${AWS_COGNITO_USER_POOL_ID}"
       AWS_COGNITO_USER_POOL_CLIENT_ID: "4dhvn5ir2oo3jjruvvk8squbm6"
       
     build: ./backend-flask
