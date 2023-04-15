@@ -4,7 +4,9 @@ services:
     environment:
     
       # Prod DB Conn
+
       #CONNECTION_URL: "${PROD_CONNECTION_URL}"
+      AWS_ENDPOINT_URL: "http://dynamodb-local:8000"
       
       # Local DB Conn
       CONNECTION_URL: "postgresql://postgres:password@db:5432/cruddur"
