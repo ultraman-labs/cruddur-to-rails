@@ -140,6 +140,7 @@ def data_message_groups():
     if model['errors'] is not None:
       return model['errors'], 422
     else:
+      print("hola")
       return model['data'], 200
   except TokenVerifyError as e:
     # unauthenicatied request
