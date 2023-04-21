@@ -9,6 +9,7 @@ dynamodb = boto3.resource(
 )
 
 def lambda_handler(event, context):
+  print('event-data',event)  
   pk = event['Records'][0]['dynamodb']['Keys']['pk']['S']
   sk = event['Records'][0]['dynamodb']['Keys']['sk']['S']
   if pk.startswith('MSG#'):
