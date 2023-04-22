@@ -124,30 +124,77 @@
 <br><br><br><br><br><br>
  ---
  
- >> ** Logging into Cruddur. <br><br><br><br>
-  ![DB Connect Script](../_docs/assets/week4/confirmemail.png)
+ >> ** The solution was adding the path and element to the App.js. <br><br><br><br>
+  ![Adding Path and Element](../_docs/assets/week5/codetrace.png)
 
 <br><br><br><br><br><br>
  ---
  
- >> ** Investigating CloudWatch logs for any errors. There were none! <br><br><br><br>
-  ![DB Connect Script](../_docs/assets/week4/lognoerrors2.png)
+ >> ** Creating the VPC endpoint <br><br><br><br>
+  ![VPC endpoint](../_docs/assets/week5/cruddurendpoint.png)
 
 <br><br><br><br><br><br>
  ---
  
- >> ** Successfully retrieved new Cruddur users <br><br><br><br>
-  ![DB Connect Script](../_docs/assets/week4/verifieddbuserentry2.png)
+ >> ** Created the AWS Dynamo DB table. <br><br><br><br>
+  ![DB Connect Script](../_docs/assets/week5/dynamodbcruddurtable.png)
 
 <br><br><br><br><br><br>
  ---
  
- >> ** Bingo! The Crud posted as expected. <br><br><br><br>
-  ![DB Connect Script](../_docs/assets/week4/crudpostverified2.png)
+ >> ** Creating the prod table onto AWS by runningthe  schema-load file with the prod flag. <br><br><br><br>
+  ![Prod table](../_docs/assets/week5/gitpodclicruddurtable.png)
  
 <br><br><br><br><br><br>
  ---
  
+  >> ** Enabling the Dynamo DB stream for the cruddur-messages table. <br><br><br><br>
+  ![Enabling stream](../_docs/assets/week5/dynamostreamon.png)
+ 
+<br><br><br><br><br><br>
+ ---
+ 
+  >> ** Verifying that the stream trigger was created. <br><br><br><br>
+  ![Stream trigger](../_docs/assets/week5/triggerstream.png)
+ 
+<br><br><br><br><br><br>
+ ---
+ 
+  >> ** ClickOps for creating the inline policy for the lambda function. <br><br><br><br>
+  ![inline policy](../_docs/assets/week5/creatininlinepolicyi.png)
+ 
+<br><br><br><br><br><br>
+ ---
+ 
+  >> ** Verifying the creation of the inline policy. <br><br><br><br>
+  ![Verifying inline policy](../_docs/assets/week5/lambdapolicy.png)
+ 
+<br><br><br><br><br><br>
+ ---
+ 
+  >> ** Londo user is now working. <br><br><br><br>
+  ![Got londo](../_docs/assets/week5/gotlondo.png)
+ 
+<br><br><br><br><br><br>
+ ---
+ 
+  >> ** Generating AWS Dynamo prod messages . <br><br><br><br>
+  ![Prod messages](../_docs/assets/week5/prodcrudmessage.png)
+ 
+<br><br><br><br><br><br>
+ ---
+ 
+  >> ** Now using Cruddur app to test Londo messages on prod. <br><br><br><br>
+  ![Testing Londo on prod](../_docs/assets/week5/londotacocheck.png)
+ 
+<br><br><br><br><br><br>
+ ---
+ 
+  >> ** CloudWatch logs for Cruddur messages appear to be good. <br><br><br><br>
+  ![DB Connect Script](../_docs/assets/week5/logevents.png)
+ 
+<br><br><br><br><br><br>
+ ---
  
  
  
