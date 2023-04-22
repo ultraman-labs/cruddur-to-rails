@@ -21,12 +21,12 @@
 | * ![Creating DB and loading schema](../_docs/assets/week5/cratingdbschema.png) |
 | * --- | 
 <p> --- <br>  
-    **Connect to postgres first, then create database buddy!  </p>
+    **Seeding messages  </p>
     
-   ![Cruddur DB Listed](../_docs/assets/week4/postgrescreatedb1.png)  <br><br><br><br><br><br>
+   ![Seeding messages](../_docs/assets/week5/creatingmessagebunch.png)  <br><br><br><br><br><br>
    ---
-  >> ** Moving towards automizing postgres password<br><br> 
-       ![Auto PW](../_docs/assets/week4/autopwpostgres.png)
+  >> ** Running data scan<br><br> 
+       ![Auto PW](../_docs/assets/week5/performscan.png)
    
 <br><br><br><br><br><br>
 ---
