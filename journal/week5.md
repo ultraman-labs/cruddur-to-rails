@@ -106,20 +106,20 @@
  
  ---
 
- >> ** Adding description to security group rule. <br><br><br><br>
-  ![DB Connect Script](../_docs/assets/week4/descriptionwentthrough.png)
+ >> ** Hmmm...the endpoint_url can not be found. The outputted suggestion is that this is a syntax error. <br><br><br><br>
+  ![Syntax error](../_docs/assets/week5/findingsyntaxerror.png)
 
 <br><br><br><br><br><br>
  ---
  
- >> ** Retrieving email confirmation code. <br><br><br><br>
-  ![DB Connect Script](../_docs/assets/week4/confirmationcode.png)
+ >> ** Some times looking for the simple things can be the answer. In this case, it was an extra blank space. <br><br><br><br>
+  ![Extra space](../_docs/assets/week5/extraspacenowfixed.png)
 
 <br><br><br><br><br><br>
  ---
  
- >> ** Logging into Cruddur. <br><br><br><br>
-  ![DB Connect Script](../_docs/assets/week4/confirmemail.png)
+ >> ** Debugging this Unhandled thrown error when loading Londo new message. <br><br><br><br>
+  ![No Londo message](../_docs/assets/week5/lostlondo.png)
 
 <br><br><br><br><br><br>
  ---
