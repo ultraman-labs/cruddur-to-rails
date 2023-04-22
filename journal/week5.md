@@ -25,31 +25,31 @@
     
    ![Seeding messages](../_docs/assets/week5/creatingmessagebunch.png)  <br><br><br><br><br><br>
    ---
-  >> ** Running data scan<br><br> 
-       ![Auto PW](../_docs/assets/week5/performscan.png)
+  >> ** Running data scan.<br><br> 
+       ![Running data scan](../_docs/assets/week5/performscan.png)
    
 <br><br><br><br><br><br>
 ---
 
 
- >> ** Exporting the connection url to GitPod environment. <br><br><br><br>
- ![Connection URL](../_docs/assets/week4/autopsqllogin.png) 
+ >> ** Retrieving conversations. <br><br><br><br>
+ ![Retrieving Conversations](../_docs/assets/week5/getconversations.png) 
  
  <br><br><br><br><br><br>
  ---   
  
- >> ** Testing the bash db-drop script. <br><br><br><br>
- ![Drop DB](../_docs/assets/week4/dropdb.png) 
+ >> ** Time format error. <br><br><br><br>
+ ![Time format error](../_docs/assets/week5/whatthehecktimeerror.png) 
  
  <br><br><br><br><br><br>
  ---
->> ** Testing the bash db-create script. <br><br><br><br>
-      ![Creating Cruddur DB](../_docs/assets/week4/createdb.png) 
+>> ** Resolving the time format error. <br><br><br><br>
+      ![Time Format Error](../_docs/assets/week5/thetimefix.png) 
 
 <br><br><br><br><br><br>
  ---
->> ** Testing the bash db-schema-load script. <br><br><br><br>
-  ![Schema Loading](../_docs/assets/week4/dbschemaload.png)
+>> ** Listing users. <br><br><br><br>
+  ![Listing users](../_docs/assets/week5/awsclilistusers.png)
 
 <br><br><br><br><br><br>
  ---
