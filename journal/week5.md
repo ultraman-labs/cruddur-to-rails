@@ -6,7 +6,7 @@
 # Progress/reference and "Ah-ha" notes to self.
 | *********************** |
 | --- |
-| * [Field Notes](https://github.com/ultraman-labs/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/week5/Notes-Week45.txt) |
+| * [Field Notes](https://github.com/ultraman-labs/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/week5/Notes-Week5.txt) |
 | --- |
 | ** Created the Cruddur DB instance |
 | --- |
