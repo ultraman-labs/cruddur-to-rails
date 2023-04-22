@@ -99,7 +99,7 @@
 ---
 
  >> ** Andrew explained this error, and the temp fix is to re-login. <br><br><br><br>
-  ![Expired token](../_docs/assets/week5/expired token.png)
+  ![Expired token](../_docs/assets/week5/expiredtoken.png)
 
 <br><br><br><br><br><br>
  ---
