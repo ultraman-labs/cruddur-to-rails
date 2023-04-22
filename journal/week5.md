@@ -8,7 +8,7 @@
 | --- |
 | * [Field Notes](https://github.com/ultraman-labs/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/week5/Notes-Week5.txt) |
 | --- |
-| ** Directory Cleanup |
+| ** Backend Directory Cleanup |
 | --- |
 | * ![Directory CLeanup](../_docs/assets/week5/directorycleanup.png) |
 | --- |
