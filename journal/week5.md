@@ -54,52 +54,52 @@
 <br><br><br><br><br><br>
  ---
 
->> ** Testing the bash db-connect script. <br><br><br><br>
-  ![DB Connect Script](../_docs/assets/week4/dbconnect.png)
+>> ** Exporting environmental variables. <br><br><br><br>
+  ![Exporting environmental variables](../_docs/assets/week5/exportingenvvar.png)
 
 <br><br><br><br><br><br>
  --- 
  
- >> ** Using the command \dt to list the users and activities tables. <br><br><br><br>
-  ![DB Connect Script](../_docs/assets/week4/listingtables.png)
+ >> ** Changing file permissions. <br><br><br><br>
+  ![Changing file permissions](../_docs/assets/week5/listusersfile.pngg)
 
 <br><br><br><br><br><br>
  --- 
 
->> ** Seeding the data into the tables. <br><br><br><br>
-  ![DB Connect Script](../_docs/assets/week4/dbseeddata.png)
-
-<br><br><br><br><br><br>
- --- 
- 
- >> ** False negative-- Cruddur DB instance did spin up successfully. <br><br><br><br>
-  ![DB Connect Script](../_docs/assets/week4/awsrdslied.png)
+>> ** Updating Cognito users ids and generating its output. <br><br><br><br>
+  ![Updating Cognito users](../_docs/assets/week5/verifyinguserdata.png)
 
 <br><br><br><br><br><br>
  --- 
  
- >> ** Editing security group inbound rule for GitPod. <br><br><br><br>
-  ![DB Connect Script](../_docs/assets/week4/beforesginboundrule.png)
+ >> ** Error that "setCognitoErrors" is undefined. <br><br><br><br>
+  ![setCognitoErrors](../_docs/assets/week5/troublewithconfirmaitonpage.png)
+
+<br><br><br><br><br><br>
+ --- 
+ 
+ >> ** Resolved setCognitoErrors, with code change shown in pic. <br><br><br><br>
+  ![setCognitoErrors Fixed](../_docs/assets/week5/troublewithmessagegroupspage.png)
 
 <br><br><br><br><br><br>
  ---
 
- >> ** Testing the connection to the production database. <br><br><br><br>
-  ![DB Connect Script](../_docs/assets/week4/successprodconnect2.png)
+ >> ** The cause of this error was the referencing to a bash script. <br><br><br><br>
+  ![Wrong reference](../_docs/assets/week5/bashtopythonerror.png)
 
 <br><br><br><br><br><br>
  ---
 
- >> ** Listing production database. <br><br><br><br>
-  ![DB Connect Script](../_docs/assets/week4/listofproddbs.png)
+ >> ** Resolved this error by moving the file to the correct directory . <br><br><br><br>
+  ![Moved file](../_docs/assets/week5/nosuchfile.png)
 
 <br><br><br><br><br><br>
  ---
 
 ---
 
- >> ** Setting GitPod's environmental variables for DB security group identification. <br><br><br><br>
-  ![DB Connect Script](../_docs/assets/week4/returntrue1.png)
+ >> ** Andrew explained this error, and the temp fix is to re-login. <br><br><br><br>
+  ![Expired token](../_docs/assets/week5/expired token.png)
 
 <br><br><br><br><br><br>
  ---
