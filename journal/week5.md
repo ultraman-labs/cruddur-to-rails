@@ -61,7 +61,7 @@
  --- 
  
  >> ** Changing file permissions. <br><br><br><br>
-  ![Changing file permissions](../_docs/assets/week5/listusersfile.pngg)
+  ![Changing file permissions](../_docs/assets/week5/listusersfile.png)
 
 <br><br><br><br><br><br>
  --- 
