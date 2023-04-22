@@ -8,17 +8,17 @@
 | --- |
 | * [Field Notes](https://github.com/ultraman-labs/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/week5/Notes-Week5.txt) |
 | --- |
-| ** Backend Directory Cleanup |
+| ** Backend directory cleanup. |
 | --- |
 | * ![Directory CLeanup](../_docs/assets/week5/directorycleanup.png) |
 | --- |
-| ** Verifying the availbility zone for my region.|
+| ** Updating seed file user handles.|
 | --- |
-| * ![Availability Zone](../_docs/assets/week4/availabilityzone.png) |
+| * ![Updating User Handles](../_docs/assets/week5/updatinguserhandles.png) |
 | * ---|
-| ** Listing the database before creating the Cruddur DB.
+| ** Creating DB and loading schema.
 | * ---|
-| * ![List DBs](../_docs/assets/week4/dblist.png) |
+| * ![Creating DB and loading schema](../_docs/assets/week5/cratingdbschema.png) |
 | * --- | 
 <p> --- <br>  
     **Connect to postgres first, then create database buddy!  </p>
