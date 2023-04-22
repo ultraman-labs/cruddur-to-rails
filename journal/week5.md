@@ -8,9 +8,9 @@
 | --- |
 | * [Field Notes](https://github.com/ultraman-labs/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/week5/Notes-Week5.txt) |
 | --- |
-| ** Created the Cruddur DB instance |
+| ** Directory Cleanup |
 | --- |
-| * ![Cruddur DB Instance](../_docs/assets/week4/rdscruddur.png) |
+| * ![Directory CLeanup](../_docs/assets/week5/directorycleanup.png) |
 | --- |
 | ** Verifying the availbility zone for my region.|
 | --- |
