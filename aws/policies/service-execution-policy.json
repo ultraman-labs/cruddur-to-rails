@@ -5,6 +5,12 @@
     "Effect":"Allow",
     "Principal":{
       "Service":["ecs-tasks.amazonaws.com"]
-     }
+   }},{
+     "Effect":"Allow",
+     "Action":[
+       "ssm:GetParameter",
+       "ssm:GetParameter",
+     ],  
+     "Resource": "arn:aws:ssm:us-west-1:875250894678:parameter/cruddur/backend-flask/*"   
    }]
 }
