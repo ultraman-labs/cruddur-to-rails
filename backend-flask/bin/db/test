@@ -4,14 +4,27 @@ import psycopg
 import os
 import sys
 
-connection_url = os.getenv("CONNECTION_URL")
+#connection_url = os.getenv("CONNECTION_URL")
 
 conn = None
-try:
-  print('attempting connection')
-  conn = psycopg.connect(connection_url)
-  print("Cruddur DB Connection successful!")
-except psycopg.Error as e:
-  print("Unable to connect to the Cruddur DB database:", e)
-finally:
-  conn.close()
+# try:
+#   print('attempting connection')
+#   conn = psycopg.connect(connection_url)
+#   print("Cruddur DB Connection successful!")
+# except psycopg.Error as e:
+#   print("Unable to connect to the Cruddur DB database:", e)
+# finally:
+#   conn.close()
+
+if sys.argv[0] == "prod":
+    URL = os.environ['PROD_CONNECTION_URL']
+
+    print('Attempting Prod Connection')
+    conn = psycopg.connect(URL)
+    print("Cruddur Prod DB Connection successful!")
+    conn.close()
+else:
+    URL = os.environ['CONNECTION_URL']
+    print("Attempting Local Connection")
+    print("Cruddur DB Connection successful!")
+    
