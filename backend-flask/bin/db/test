@@ -16,7 +16,7 @@ conn = None
 # finally:
 #   conn.close()
 
-if sys.argv[0] == "prod":
+if len(sys.argv) > 1 and sys.argv[1] == "prod":
     URL = os.environ['PROD_CONNECTION_URL']
 
     print('Attempting Prod Connection')
@@ -26,5 +26,6 @@ if sys.argv[0] == "prod":
 else:
     URL = os.environ['CONNECTION_URL']
     print("Attempting Local Connection")
+    conn = psycopg.connect(URL)
     print("Cruddur DB Connection successful!")
     
