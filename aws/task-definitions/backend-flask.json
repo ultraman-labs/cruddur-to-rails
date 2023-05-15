@@ -57,8 +57,8 @@
           {"name": "OTEL_EXPORTER_OTLP_ENDPOINT", "value": "https://api.honeycomb.io"},
           {"name": "AWS_COGNITO_USER_POOL_ID", "value": "us-west-1_rPiNkqPbW"},
           {"name": "AWS_COGNITO_USER_POOL_CLIENT_ID", "value": "4dhvn5ir2oo3jjruvvk8squbm6"},
-          {"name": "FRONTEND_URL", "value": "cloud-axis.com"},
-          {"name": "BACKEND_URL", "value": "api.cloud-axis.com"},
+          {"name": "FRONTEND_URL", "value": "https://cloud-axis.com"},
+          {"name": "BACKEND_URL", "value": "https://api.cloud-axis.com"},
           {"name": "AWS_DEFAULT_REGION", "value": "us-west-1"}
         ],
         "secrets": [
