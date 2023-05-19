@@ -1,0 +1,32 @@
+#!/bin/bash
+
+count=0
+running=true
+
+
+
+# Function to display the current directory contents
+list_directory() {
+  echo "..................................."  
+  echo "Current directory contents:"
+  ls -l
+  echo ""
+}
+
+# Function to handle user input
+handle_user_input() {
+  if read -n 1 -s -t 1 key; then
+    running=false
+  fi
+}
+echo "Press any key to stop the script."
+
+# Main script loop
+while $running; do
+  list_directory
+  ((count++))
+  echo "Command executed $count time(s)."
+  sleep 60
+done
+
+echo "Script stopped."
