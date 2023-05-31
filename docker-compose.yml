@@ -9,7 +9,7 @@ services:
       AWS_ENDPOINT_URL: "http://dynamodb-local:8000"
       
       # Local DB Conn
-      CONNECTION_URL: "postgresql://postgres:password@db:5432/cruddur"
+      #CONNECTION_URL: "postgresql://postgres:password@db:5432/cruddur"
       
       # Local GitPod Frontend & Backend Connection URL & Ports
       FRONTEND_URL: "https://3000-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}"
