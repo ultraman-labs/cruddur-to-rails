@@ -17,7 +17,7 @@ class Ddb:
         return dynamodb
 
     def list_message_groups(client, my_user_uuid):
-        year = str(datetime.now().year)
+        year = datetime.now().year
         table_name = 'cruddur-messages'
         query_params = {
             'TableName': table_name,
@@ -25,7 +25,7 @@ class Ddb:
             'ScanIndexForward': False,
             'Limit': 20,
             'ExpressionAttributeValues': {
-                ':year': {'S': year},
+                ':year': {'S': str(year)},
                 ':pk': {'S': f"GRP#{my_user_uuid}"}
             }
         }
@@ -49,7 +49,7 @@ class Ddb:
         return results
 
     def list_messages(client, message_group_uuid):
-        year = str(datetime.now().year)
+        year = datetime.now().year
         table_name = 'cruddur-messages'
         query_params = {
             'TableName': table_name,
@@ -57,7 +57,7 @@ class Ddb:
             'ScanIndexForward': False,
             'Limit': 20,
             'ExpressionAttributeValues': {
-                ':year': {'S': year},
+                ':year': {'S': str(year)},
                 ':pk': {'S': f"MSG#{message_group_uuid}"}
             }
         }
