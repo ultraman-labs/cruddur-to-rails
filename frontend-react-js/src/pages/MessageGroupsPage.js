@@ -13,7 +13,7 @@ export default function MessageGroupsPage() {
 
   const loadData = async () => {
     try {
-      const backend_url = `${process.env.REACTBACKEND_URL_APP}/api/message_groups`
+      const backend_url = `${process.env.REACTBACKEND_URL_APP_}/api/message_groups`
       await getAccessToken()
       const access_token = localStorage.getItem("access_token")
       const res = await fetch(backend_url, {
