@@ -1,4 +1,5 @@
 import boto3
+import json
 
 # Create DynamoDB client
 dynamodb = boto3.client('dynamodb')
@@ -12,9 +13,11 @@ response = dynamodb.scan(TableName=table_name)
 # Extract items
 items = response['Items']
 
-# Display all attribute names
-print("Attribute Names:")
+# Display item details
+print("Table Items:")
 for item in items:
-    for attribute_name in item.keys():
-        print(attribute_name)
+    formatted_item = {}
+    for attribute, value in item.items():
+        formatted_item[attribute] = list(value.values())[0]
+    print(json.dumps(formatted_item, indent=4))
     print()

@@ -6,9 +6,6 @@ dynamodb = boto3.client('dynamodb')
 # Define table name
 table_name = 'cruddur-messages'
 
-# Prepare BatchWriteItem Request
-request_items = []
-
 # Define updates for specific user_display_name values
 updates = {
     'Tony Quintanilla': 'f34ded61-7951-45f9-851b-0a151f853f06',
@@ -17,21 +14,18 @@ updates = {
 
 # Update Items
 for user_display_name, new_user_uuid in updates.items():
-    update_request = {
-        'PutRequest': {
-            'Item': {
-                'user_display_name': {'S': user_display_name},
-                'user_uuid': {'S': new_user_uuid}
-            }
-        }
-    }
-    request_items.append(update_request)
+    update_expression = 'SET user_uuid = :new_uuid'
+    expression_attribute_values = {':new_uuid': {'S': new_user_uuid}}
+    
+    response = dynamodb.update_item(
+        TableName=table_name,
+        Key={
+            'pk': {'S': f'USER#{user_display_name}'},
+            'sk': {'S': 'PROFILE'}
+        },
+        UpdateExpression=update_expression,
+        ExpressionAttributeValues=expression_attribute_values
+    )
+    print(f"Item updated for user_display_name: {user_display_name}")
 
-# Execute BatchWriteItem Request
-response = dynamodb.batch_write_item(RequestItems={table_name: request_items})
-
-# Handle Errors
-if response.get('UnprocessedItems'):
-    print('Some items were not updated successfully:', response['UnprocessedItems'])
-else:
-    print('All items were updated successfully.')
+print('All items were updated successfully.')
