@@ -18,11 +18,11 @@ updates = {
 # Update Items
 for user_display_name, new_user_uuid in updates.items():
     update_request = {
-        'Update': {
-            'TableName': table_name,
-            'Key': {'user_display_name': {'S': user_display_name}},
-            'UpdateExpression': 'SET user_uuid = :new_uuid',
-            'ExpressionAttributeValues': {':new_uuid': {'S': new_user_uuid}}
+        'PutRequest': {
+            'Item': {
+                'user_display_name': {'S': user_display_name},
+                'user_uuid': {'S': new_user_uuid}
+            }
         }
     }
     request_items.append(update_request)
