@@ -7,8 +7,8 @@ dynamodb = boto3.client('dynamodb')
 # Define table name
 table_name = 'cruddur-messages'
 
-# Define the user_uuid
-user_uuid = 'f34ded61-7951-45f9-851b-0a151f853f06'
+# Prompt the user to enter the user_uuid
+user_uuid = input("Enter the user_uuid: ")
 
 # Query the table to retrieve the items with the matching user_uuid
 response = dynamodb.scan(
@@ -26,7 +26,7 @@ if len(items) == 0:
     print("No records with the specified user_uuid were found.")
 else:
     num_records = len(items)
-    print(colored(f"Number of records retrieved: {num_records}", 'green'))
+    num_items = sum(len(item) for item in items)
     print("----------------------------------")
     for item in items:
         print("Record:")
@@ -35,3 +35,5 @@ else:
                 attr_value = attr_value.get(list(attr_value.keys())[0])
                 print(f"{attr_name}: {attr_value}")
         print("----------------------------------")
+    print(colored(f"\nNumber of records retrieved: {num_records}", 'green'))
+    print(colored(f"Number of items retrieved: {num_items}", 'green'))
