@@ -1,4 +1,5 @@
 import boto3
+from termcolor import colored
 
 # Create DynamoDB client
 dynamodb = boto3.client('dynamodb')
@@ -41,4 +42,5 @@ for item in items:
 if updated_count == 0:
     print("No records were updated.")
 else:
-    print(f"Number of records updated: {updated_count}")
+    message = colored("Number of records updated: ", 'yellow') + colored(str(updated_count), 'green')
+    print(message)
