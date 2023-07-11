@@ -6,10 +6,12 @@ dynamodb = boto3.client('dynamodb')
 # Define table name
 table_name = 'cruddur-messages'
 
-# Define the user_handle and new_user_uuid
+# Prompt user for old_user_uuid and new_user_uuid
+old_user_uuid = input("Enter the old user_uuid: ")
+new_user_uuid = input("Enter the new user_uuid: ")
+
+# Define the user_handle
 user_handle = 'Ultra-Man'
-old_user_uuid = '7fba6d6d-ca3a-4557-b9fd-7b9844b15289'
-new_user_uuid = 'f34ded61-7951-45f9-851b-0a151f853f06'
 
 # Query the table to retrieve the item with the matching user_handle
 response = dynamodb.scan(
