@@ -16,13 +16,25 @@ message_uuid = input("Enter the message_uuid: ")
 # Define the user_handle
 user_handle = 'Ultra-Man'
 
+# Define the attribute names to display
+attribute_names = [
+    'user_display_name',
+    'message',
+    'message_group_uuid',
+    'pk',
+    'message_uuid',
+    'user_uuid',
+    'sk',
+    'user_handle'
+]
+
 # Query the table to retrieve all items with the matching user_handle and message_uuid
 response = dynamodb.scan(
     TableName=table_name,
     FilterExpression='#uh = :user_handle AND #mu = :message_uuid',
     ExpressionAttributeNames={'#uh': 'user_handle', '#mu': 'message_uuid'},
     ExpressionAttributeValues={':user_handle': {'S': user_handle}, ':message_uuid': {'S': message_uuid}},
-    ProjectionExpression='pk, user_display_name, message, message_group_uuid, message_uuid, user_uuid, user_handle'
+    ProjectionExpression=', '.join(attribute_names)
 )
 
 # Update the items with the new_user_uuid and count the number of records updated
@@ -64,14 +76,15 @@ for item in items:
             'pk': {'S': pk},
             'sk': {'S': 'PROFILE'}
         },
-        ProjectionExpression='pk, user_display_name, message, message_group_uuid, message_uuid, user_uuid, user_handle'
+        ProjectionExpression=', '.join(attribute_names)
     )
     updated_item = response.get('Item')
 
     # Display the updated record
     if updated_item:
         print("\nUpdated Record:")
-        for attr_name, attr_value in updated_item.items():
+        for attr_name in attribute_names:
+            attr_value = updated_item.get(attr_name)
             if attr_value:
                 attr_value = attr_value.get(list(attr_value.keys())[0])
                 print(f"{attr_name}: {attr_value}")
