@@ -17,5 +17,7 @@ Flask-AWSCognito
 psycopg[binary]
 psycopg[pool]
 
-boto3
 termcolor
+
+boto3
+
