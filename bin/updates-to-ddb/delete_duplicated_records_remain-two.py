@@ -1,5 +1,6 @@
 import boto3
 from collections import defaultdict
+from termcolor import colored
 
 # Create DynamoDB client
 dynamodb = boto3.client('dynamodb')
@@ -24,9 +25,9 @@ response = dynamodb.scan(
 items = response['Items']
 
 if len(items) == 0:
-    print("No records with the specified user_uuid and message were found.")
+    print(colored("No records with the specified user_uuid and message were found.", 'green'))
 else:
-    print(f"Number of records retrieved: {len(items)}")
+    print(colored(f"Number of records retrieved: {colored(len(items), 'yellow')}", 'blue'))
 
     # Create a dictionary to track duplicate records
     duplicates = defaultdict(list)
@@ -43,10 +44,10 @@ else:
         if len(sk_list) > 2:
             total_duplicates += len(sk_list) - 2
 
-    print(f"Number of duplicate records found: {total_duplicates}")
+    print(colored(f"Number of duplicate records found: {colored(total_duplicates, 'yellow')}", 'blue'))
 
     # Prompt the user to confirm deletion
-    proceed = input("Do you want to proceed with deleting duplicate records? (yes/no): ")
+    proceed = input(colored("Do you want to proceed with deleting duplicate records? (yes/no): ", 'blue'))
 
     if proceed.lower() == 'yes':
         deleted_count = 0
@@ -63,9 +64,9 @@ else:
                     deleted_count += len(response.get('UnprocessedItems', {}).get(table_name, []))
                     records_to_delete = records_to_delete[25:]
 
-        print(f"Number of duplicate records deleted: {deleted_count}")
+        print(colored(f"Number of duplicate records deleted: {colored(deleted_count, 'yellow')}", 'blue'))
     else:
-        print("Deletion process aborted.")
+        print(colored("Deletion process aborted.", 'blue'))
 
     # Query the table to retrieve the remaining items with the matching user_uuid and message
     response = dynamodb.scan(
@@ -78,8 +79,8 @@ else:
 
     # Retrieve the remaining items associated with the user_uuid and message
     remaining_items = response['Items']
-    print(f"\nNumber of remaining records: {len(remaining_items)}")
-    print("Value of 'message' attribute in remaining records:")
+    print(colored(f"\nNumber of remaining records: {colored(len(remaining_items), 'yellow')}", 'blue'))
+    print(colored("Value of 'message' attribute in remaining records:", 'blue'))
     for item in remaining_items:
         pk = item.get('pk', {}).get('S')
         message = item.get('message', {}).get('S')
