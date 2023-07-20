@@ -1,10 +1,24 @@
 #! /usr/bin/bash
 
 ABS_PATH=$(readlink -f "$0")
-FRONTEND_PATH=$(dirname $ABS_PATH)
-BIN_PATH=$(dirname $FRONTEND_PATH)
+# BUILD_PATH=$(dirname $ABS_PATH)
+# DOCKER_PATH=$(dirname $BUILD_PATH)
+# BIN_PATH=$(dirname $DOCKER_PATH)
+BIN_PATH=$(dirname $ABS_PATH)
+# BACKEND_FLASK_PATH=$(dirname $BIN_PATH)
+# PROJECT_PATH=$(dirname $BACKEND_FLASK_PATH)
 PROJECT_PATH=$(dirname $BIN_PATH)
+
+# echo $ABS_PATH
+# echo $BUILD_PATH
+# echo $BIN_PATH
+# echo $BACKEND_FLASK_PATH
+echo $PROJECT_PATH
+
 FRONTEND_REACT_JS_PATH="$PROJECT_PATH/frontend-react-js"
+
+# This line of code was on line 24. Moved it to resolve docker build error. May have to move it back.
+# --build-arg REACT_APP_BACKEND_URL="https://cruddur-alb-337798396.us-west-1.elb.amazonaws.com:4567" \
 
 docker build \
 --build-arg REACT_APP_BACKEND_URL="https://api.cloud-axis.com" \
