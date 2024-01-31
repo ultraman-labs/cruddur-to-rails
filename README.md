@@ -9,7 +9,7 @@
 ### Weekly Journals
 - [Week 0 Journal](journal/week0.md)
 - [Week 1 Journal](journal/week1.md)
-=======
+
 # FREE AWS Cloud Project Bootcamp
 
 - Application: Cruddur
@@ -43,3 +43,6 @@ The `/journal` directory contains
 - [ ] [Week 11](journal/week11.md)
 - [ ] [Week 12](journal/week12.md)
 - [ ] [Week 13](journal/week13.md)
+
+
+
