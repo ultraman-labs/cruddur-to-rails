@@ -1,6 +1,6 @@
 tasks:
-
-  - init: |
+  - name: rails
+    init: |
       # Update RubyGems
       gem update --system 3.5.5
 
