@@ -1,0 +1,93 @@
+>> Vid Time-Stamp Left Off At: 42:22
+
+>> GitPod Time/Credits Logs:
+
+   
+
+   (3-13-2023)                    	(3-13-2023)                       (3-13-2023)         
+   Start--> 04:16 pm  Credz 781.59    Start--> 10:55 am  Credz 748.56    Start--> 12:58 am  Credz 748.56
+   End  --> 07:53 pm  Credz 749.66    End  --> 12:45:pm  Credz 733.16    End  --> 01:33:pm  Credz 728.94
+
+   (3-14-2023)                        (3-14-2023)
+   Start--> 09:01 pm  Credz 788.89    Start--> 08:45 pm  Credz 683.80
+   End  --> 10:17 pm  Credz 685.23    End  --> 11:24 pm  Credz 660.70  
+   
+
+>> Edifying Myself
+        
+	* The idea behind architecting or engineering things is that you need to look at different options and rule
+	  out why something works or why somethin' doesn't work. 
+   
+
+>> Odds-n-Ends
+
+		-- Dependencies are libraries that are required to make the application work--- you always
+		   want them installed. 
+
+		-- Dev Dependicies are libraries that you only want to be installed when you're using them
+              for development-- but, when they get shipped to production, they aren't shipped with
+              the code. 
+
+		-- Dev tips and Oh Really?
+
+                $ npm i aws-amplify --save      ---> command for dependency
+                $ npm i aws-amplify --save-dev  ---> as dependency developer tool
+
+
+>> Cognito
+
+           -- User Groups
+
+ 			* User Groups are used when integrating an application and you want to have a pool 
+     	             of users that can be used. When you are making a web application and you want to\
+                  add in login and signup-- and you want that to be managed externally. 
+
+           -- Federated Identity Providers
+
+                * Is when you want to allow people to log into your app using a social identity 
+                  from another provider. 
+
+
+>> AWS Servicies
+
+		--Amplify
+			* Is an SDK for many common serverless libraries. 
+			* It's a hosting platform
+			* Is a way of provisioning serverless applications
+			* Is a low code solution
+
+
+
+
+
+>> Just in case
+
+		--From file SigninPage.js
+
+		 Line 24	.catch(err => { console.log('Error!', err) });
+
+
+
+
+
+>> Resolved errors
+ 
+    Wow! In the sign-in page of Cruddur, I was receiving an error of "User pool us-west-1_gOH8uljSz does not exist."
+    This threw me good! I initially thought to look in the docker-compose.yml file for code line that referenced
+    the "REACT_APP_AWS_USER_POOLS_ID" environment variable-- which contained the prior "User pool ID" that AWS
+    Cognito generated. After updating this variable, I went back and restarted the docker-compose.ym file. But
+    the sign-in error persisted. Hmmm...what the strange tacos was going on!? Okay, somehow I made the cerbral
+    leap of thinking that perhaps the REACT_APP_CLIENT_ID env var had change as well--- well it did! So I 
+    grabbed (copied) the new Client ID that Cognito generated, and updated the pertinent variable in docker-compose.yml
+    Restarted the docker file and voila! After going back to the Cruddur sign-in page I was able to log in! 
+    
+
+
+
+
+
+
+
+
+	
+	

@@ -1,0 +1,144 @@
+>> Vid Time-Stamp Left Off At: 01:11.00
+
+>> GitPod Time/Credits Logs:
+
+
+    (4-6-2023)				  (4-7-2023)                       (4-7-2023)
+    Start--> 01:15 pm  Credz 1000.06  Start--> 04:10 pm  Credz 964.64  Start--> 07:07 pm  Credz 920.92
+    End  --> 03:49 pm  Credz 978.149  End  --> 08:35 pm  Credz 922.51  End  --> 10:48 pm  Credz 888.78
+    
+    (4-12-2023)                       (4-12-2023)                      (4-12-2023)                       (4-14-2023)
+    Start--> 03:59 pm  Credz 885.49   Start--> 06:07 pm  Credz 866.78  Start--> 10:45 pm  Credz 859.89   Start--> 07:10 pm  Credz 817.12
+    End  --> 06:02 pm  Credz 868.23   End  --> 07:06 pm  Credz 855.89  End  --> 12:22 pm  Credz 844.70   End  --> 11:23 pm  Credz 779.23
+
+   (4-15-2023)	                    (4-16-2023)                      (4-17-2023)                       (4-18-2023)
+   Start--> 08:50 pm  Credz 775.49    Start--> 04:05 pm  Credz 756.94  Start--> 09:25 pm  Credz 730.43   Start--> 06:15 pm  Credz 703.18
+   End  --> 11:42 pm  Credz 756.94    End  --> 06:43 pm  Credz 730.43  End  --> 12:13 pm  Credz 703.18   End  --> 09:32 pm  Credz 684.61
+
+   (4-18-2023)                        (4-18-2023)                      (4-20-2023)
+   Start--> 10:06 pm  Credz 684.11    Start--> 02:44 pm  Credz 675.15  Start--> 07:53 pm  Credz 649.49
+   End  --> 12:07 pm  Credz 675.15    End  --> 05:36 pm  Credz 649.49  End  --> 01:04 am  Credz 599.55
+
+
+>> Edifying Myself
+        
+	-- Boto3 is the Amazon Web Services (AWS) Software Development Kit (SDK) for Python, which allows 
+         Python developers to write software that makes use of services like Amazon S3 and Amazon EC2.
+       
+         Boto is a type of dolfin that lives in the Amazon. Cool.
+     
+	-- Dynamodb local runs on port 8000
+	 
+      -- A "here doc" is a multi line file
+
+	-- Be sure to use good naming for commits 
+
+	-- When using dynamo db you are utilizing read and write credits (RCUs & WCUs)
+
+      -- To be sure that the data is there, do a scan
+   
+
+>> Odds-n-Ends
+
+	-- Installed boto3. From directory backend-flask executed
+
+		$ pip install -r requirements.txt
+
+	-- When you're viewing the Docker logs for the backend-flask container, and you get
+         "error connecting in 'pool-1': connection failed", check the Amazon RDS Dashboard 
+         be sure that the AWS RDS cruddur-db-instance is running/available.
+
+	-- To create an executable python file use
+
+		#!/usr/bin/env python3 ---> Doing so, ables python to find directories
+
+	-- Might have to change 'other_handle' from Ultra-Girl to bayko in the backend >> bin >> ddb >> seed file
+
+
+	-- If you get a similar error, when trying to drop the table :
+
+		ERROR:  database "your_db" is being accessed by other users
+		DETAIL:  There is 1 other session using the database.
+		, 
+		the following approach solved it for me:
+		REVOKE CONNECT ON DATABASE <mydbname> FROM public;
+		ALTER DATABASE <mydbname> allow_connections = off;
+		SELECT pg_terminate_backend(pg_stat_activity.pid) FROM pg_stat_activity WHERE pg_stat_activity.datname = '<mydbname>';
+		DROP DATABASE <mydbname>;
+
+>> Dynamo DB  (ddb)
+ 
+	-- At this step we are using ddb local so can create a table in ddb. Can 
+         use CLI, SDK, AWS console (later, not now). Will create via SDK
+
+        
+                                                                        
+  	-- Be sure to run in this from the backen-flask directory
+
+        	./bin/db/setup
+        	./bin/ddb/schema-load 
+        	./bin/ddb/seed 
+            ./bin/db/update_cognito_user_ids
+
+
+      -- To start back clean for your databases it would be
+
+            - db/setup (reset and recreate everything for Postgres database)
+
+            - ./bin/ddb/drop (drops Dynamodb database so you can create again)
+            - ./bin/ddb/drop cruddur-messages
+            - ./bin/ddb/schema-load
+            - ./bin/ddb/patterns/get-conversation
+            - ./bin/ddb/seed (don’t run seed on prod)      
+            - ./bin/db/update_cognito_user_ids     
+	
+            --    export GITPOD_IP=$(curl ifconfig.me)
+                  ./bin/rds/update-sg-rule
+
+            - ./bin/ddb/scan | grep -i message_group_uuid 
+            
+
+
+      -- You know you have to explicitly write it in the URL. It won't appear by itself.
+            https://your-frontend-url/messages/new/londo 
+
+
+
+>> AWS Servicies
+
+	
+
+
+
+>> AWS CLI
+	
+		-- To list users in the cruddur-user-pool use:
+
+			$ aws cognito-idp list-users --user-pool-id=us-west-1_rPiNkqPbW
+     
+
+>> AWS Console
+
+      
+
+>> At the gp command line
+
+		-- To export environment variables in GitPod use:
+
+                  $  gp env AWS_COGNITO_USER_POOL_ID=us-"west-1_rPiNkqPbW"
+
+	
+>> Dev Specific
+  
+	
+>> Just in case
+
+	
+
+
+
+
+
+
+	
+	
