@@ -1,6 +1,9 @@
 tasks:
   - name: rails
     init: |
+      # Change to root directory of Rails application
+      cd /Cruddur
+      
       # Update RubyGems
       gem update --system 3.5.5
 
