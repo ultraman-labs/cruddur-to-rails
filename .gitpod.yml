@@ -37,25 +37,25 @@ tasks:
       
   - name: rails
     init: |
-      # Source RVM scripts
-      source /home/gitpod/.rvm/scripts/rvm
-
-      # Install and use a specific Ruby version
-      rvm install "ruby-3.2.2"
-      rvm use "ruby-3.2.2"
-          
-      # Change to root directory of Rails application
-      cd Cruddur
+       # Source RVM scripts
+       source /home/gitpod/.rvm/scripts/rvm
+   
+       # Install and use a specific Ruby version
+       rvm install "ruby-3.2.2"
+       rvm use "ruby-3.2.2" --default
       
-      # Update RubyGems
-      gem update --system 3.5.5
-
-      # Install Rails (this assumes Ruby is already installed)
-      gem install rails 
+       # Update RubyGems
+       gem update --system
+   
+       # Install Rails (this assumes Ruby is already installed)
+       gem install rails  
+   
+       # Change to root directory of Rails application
+       cd Cruddur
+      
 
       # Cache the installation of gems to speed up future workspace startups
       # Optional: Specify the path to cache
-
 ports:
   - name: frontend
     port: 3000-3100
