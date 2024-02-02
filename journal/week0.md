@@ -157,6 +157,49 @@ end
 
 ## 3) Create a posts controller
 
+**Step 1:** Open Terminal and Navigate to Your Rails Application
+Ensure you're in the root directory of your Rails application. This is where you'll find folders like app, config, and Gemfile.
+
+**Step 2:** Generate the Posts Controller
+Use the Rails generator command to create your new controller. In your terminal, run:
+
+```bash
+rails generate controller Posts
+```
+This command does several things:
+
+Creates a controller file named posts_controller.rb in app/controllers. This is where you'll define actions like index, show, new, edit, etc.
+Creates a corresponding view directory app/views/posts. Here you'll add view templates for each of your controller actions.
+Generates a helper file in app/helpers/posts_helper.rb. This module can be used to store helper methods for your views.
+Adds a new file in app/assets/javascripts for JavaScript specific to the posts controller (if using the Asset Pipeline).
+Adds a new stylesheet in app/assets/stylesheets for CSS specific to the posts controller (if using the Asset Pipeline).
+
+**Step 3:** Define Actions in the Controller
+Open the generated posts_controller.rb file in your text editor or IDE. It will be located under app/controllers. Here you can define the actions (methods) your controller will handle. For instance:
+
+```ruby
+class PostsController < ApplicationController
+  def index
+    # Code for listing all posts
+  end
+
+  def show
+    # Code for showing a single post
+  end
+
+  def new
+    # Code for showing a new post form
+  end
+
+  def create
+    # Code for creating a new post
+  end
+
+  # Add more actions as needed
+end
+```
+
+
 ## 4) Create a route for user
 
 ## 5) Create a route for post
