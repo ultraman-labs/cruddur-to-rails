@@ -8,6 +8,11 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "posts#index"
 
+  # Defines a standard RESTful route for a User 
+  resources :users
+  resources :posts
+
+
   # existing routes
   
   # Route for creating a new post
