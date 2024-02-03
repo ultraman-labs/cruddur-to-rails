@@ -52,8 +52,12 @@ tasks:
    
        # Append Gem bin directory to PATH (for the current session)
        export PATH="$(ruby -e 'puts Gem.user_dir')/bin:$PATH"
-  
-      
+
+       # Change to the root directory of the Rails application
+       cd Cruddur
+
+       # Install all gems specified in Gemfile
+       bundle install
 
       # Cache the installation of gems to speed up future workspace startups
       # Optional: Specify the path to cache
