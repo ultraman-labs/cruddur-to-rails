@@ -52,9 +52,7 @@ tasks:
    
        # Append Gem bin directory to PATH (for the current session)
        export PATH="$(ruby -e 'puts Gem.user_dir')/bin:$PATH"
-   
-       # Change to root directory of Rails application
-       cd Cruddur
+  
       
 
       # Cache the installation of gems to speed up future workspace startups
