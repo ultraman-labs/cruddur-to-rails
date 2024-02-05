@@ -32,9 +32,34 @@ While Ruby is the programming language, Rails is a web framework built using Rub
 ### Setting up .gitpod.yml so that the Gitpod environment is ready to run Rails for each new workspace instantiantion.
 The .gitpod.yml file, includes:
 
-    gem install rails
-    gem update --system 3.5.5
+```yml
+- name: rails
+    init: |
+       # Source RVM scripts
+       source /home/gitpod/.rvm/scripts/rvm
+   
+       # Install and use a specific Ruby version
+       rvm install "ruby-3.2.2"
+       rvm use "ruby-3.2.2" --default
+     
+       # Update RubyGems
+       gem update --system
+   
+       # Install Rails
+       gem install rails  
+   
+       # Append Gem bin directory to PATH (for the current session)
+       export PATH="$(ruby -e 'puts Gem.user_dir')/bin:$PATH"
 
+       # Change to the root directory of the Rails application
+       cd Cruddur
+
+       # Install all gems specified in Gemfile
+       bundle install
+
+      # Cache the installation of gems to speed up future workspace startups
+      # Optional: Specify the path to cache
+```
 
  ## Creating the Rails Project
     At the CLI, run 
@@ -199,8 +224,32 @@ class PostsController < ApplicationController
 end
 ```
 
-
 ## 4) Create a route for user
+
+
+Creating a route for a User resource in a Rails application involves defining the route in the application's routing file. Here's how to do it:
+
+1) Open the routing file located at **config/routes.rb** in your text editor or IDE.
+
+2) Inside this file, you can define a route for the User resource. There are different ways to do this depending on what you need. Here are a few common examples:
+
+*To create a standard RESTful route for a User resource (which includes routes for **index**, **new**, **create**, **show**, **edit**, **update**, and **destroy actions**), add:
+
+```ruby
+resources :users
+```
+
+3) After modifying the routes.rb file, save your changes.
+
+4) To view the list of routes that you have just created, you can run the following command in your terminal:
+
+```ruby
+rails routes
+```
+
+This will display a list of all routes in your application, including the ones you've just added for the User resource. Look for routes prefixed with users to verify that they have been added correctly.
+
+Remember, the resources method is a powerful tool in Rails that automates the creation of a set of routes associated with a given resource. It is part of Rails' convention over configuration philosophy, providing a standard RESTful route structure.
 
 ## 5) Create a route for post
 
