@@ -1,0 +1,72 @@
+History exported on 2024-02-05 22:49:05:
+-----------------------
+# Source RVM scripts
+source /home/gitpod/.rvm/scripts/rvm
+# Install and use a specific Ruby version
+rvm install "ruby-3.2.2"
+rvm use "ruby-3.2.2" --default
+# Update RubyGems
+gem update --system
+# Install Rails
+gem install rails  
+# Append Gem bin directory to PATH (for the current session)
+export PATH="$(ruby -e 'puts Gem.user_dir')/bin:$PATH"
+# Change to the root directory of the Rails application
+cd cruddur
+# Install all gems specified in Gemfile
+bundle install
+psql --version
+cd ..
+chmod u+x bsh_hstry.sh
+chmod ./bash_hstry/u+x bsh_hstry.sh
+chmod u+x ./bash_history/bsh_hstry.sh
+chmod u+x ./bash_scripts/bsh_hstry.sh
+./bash_scripts/bsh_hstry.sh
+psql -version
+psql --version
+./bash_scripts/bsh_hstry.sh
+history
+./bash_scripts/bsh_hstry.sh
+history
+./bash_scripts/bsh_hstry.sh
+source ./bash_scripts/bsh_hstry.sh
+./bash_scripts/bsh_hstry.sh
+source ./bash_scripts/bsh_hstry.sh
+
+History exported on 2024-02-05 22:49:49:
+-----------------------
+# Source RVM scripts
+source /home/gitpod/.rvm/scripts/rvm
+# Install and use a specific Ruby version
+rvm install "ruby-3.2.2"
+rvm use "ruby-3.2.2" --default
+# Update RubyGems
+gem update --system
+# Install Rails
+gem install rails  
+# Append Gem bin directory to PATH (for the current session)
+export PATH="$(ruby -e 'puts Gem.user_dir')/bin:$PATH"
+# Change to the root directory of the Rails application
+cd cruddur
+# Install all gems specified in Gemfile
+bundle install
+psql --version
+cd ..
+chmod u+x bsh_hstry.sh
+chmod ./bash_hstry/u+x bsh_hstry.sh
+chmod u+x ./bash_history/bsh_hstry.sh
+chmod u+x ./bash_scripts/bsh_hstry.sh
+./bash_scripts/bsh_hstry.sh
+psql -version
+psql --version
+./bash_scripts/bsh_hstry.sh
+history
+./bash_scripts/bsh_hstry.sh
+history
+./bash_scripts/bsh_hstry.sh
+source ./bash_scripts/bsh_hstry.sh
+./bash_scripts/bsh_hstry.sh
+source ./bash_scripts/bsh_hstry.sh
+psql --version
+source ./bash_scripts/bsh_hstry.sh
+
