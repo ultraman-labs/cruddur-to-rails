@@ -70,8 +70,11 @@ $ rails new Cruddur
 
 ## Start the Rails server with:
 ```bash
-$ rails server
+$ bundle exec rails server
 ```
+*Ensures that only the gems and versions listed in the Gemfile.lock are used to run the server. If there are version conflicts or if you have multiple versions of Rails installed, bundle exec will correctly use the version tied to the current app's bundle.
+
+*It is a safer way to ensure consistent behavior across different environments (like development, testing, and production) and among different developers on the same project.
 ---
 
 # Fatures to implement in Cruddur web app:
@@ -279,3 +282,28 @@ Rails uses the MVC pattern to structure your application. This separates the dat
 
 ## What is ERB?
 In Ruby on Rails, "ERB" stands for "Embedded Ruby". ERB is a templating system that enables Ruby code to be embedded within a text document. This is particularly useful in web applications where you might want to use Ruby to dynamically generate HTML content. In an ERB template, Ruby code is enclosed in special tags that the ERB processor recognizes and executes when the template is rendered.
+
+
+## What is the command *$ rvm list* for?
+
+In Ruby on Rails, the command $ rvm list is used when working with RVM (Ruby Version Manager). It's not specific to Rails itself but is commonly used in Rails development environments to manage different Ruby versions.
+
+Here's what the command does:
+
+**List Installed Ruby Versions:* $ rvm list displays a list of all Ruby versions that are currently installed via RVM on your machine. This includes the default Ruby version set by RVM and any other versions you may have installed for different projects or testing purposes.
+
+**Indicate Current and Default Rubies:* The command also typically indicates which Ruby version is currently being used in the shell session (=>) and which is set as the default for new sessions (=*).
+
+The output of *$ rvm list* might look something like this:
+```shell
+rvm rubies
+
+=* ruby-2.7.2 [ x86_64 ]
+   ruby-3.0.0 [ x86_64 ]
+   ruby-3.2.2 [ x86_64 ]
+
+# => - current
+# =* - current && default
+#  * - default
+```
+This is especially useful when working on multiple projects that may require different Ruby versions, as you can switch between installed versions using commands like *$ rvm use ruby-2.7.2* to set your active Ruby version to 2.7.2 for the current terminal session.
