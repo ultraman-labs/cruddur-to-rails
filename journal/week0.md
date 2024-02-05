@@ -73,29 +73,6 @@ $ rails new Cruddur
 $ rails server
 ```
 ---
-### NOTE: Model-View-Controller (MVC) pattern: 
- Rails uses the MVC pattern to structure your application. This separates the data (model), the presentation (view), and the logic (controller) of your application, making it easier to maintain and understand.
----
-
- ## Breakdown Of The routes.rb File 
- The file extension for `routes.rb` is **.rb**, which stands for **Ruby**. It's a plain text file that contains code written in the Ruby programming language.
-
-**Here's why it's a .rb file:**
-
-1. **Purpose:** The `routes.rb` file is specifically used in **Ruby on Rails** web applications to define the application's routes. These routes determine how incoming web requests are mapped to specific controller actions, essentially controlling how users navigate through different pages and features of the application.
-
-2. **Ruby code:** The content of `routes.rb` is written in Ruby syntax, using keywords, methods, and structures that are part of the Ruby language. This code is responsible for setting up the routing rules and defining how URLs are matched to controller actions.
-
-3. **Convention:** In Rails, files ending with the .rb extension are conventionally used for source code files written in Ruby. This helps maintain consistency and organization within a Rails project.
-
-**Key points:**
-
-- It's a core part of the Rails framework.
-- It's essential for defining the application's navigation structure.
-- It's written in Ruby, hence the .rb extension.
-- It's typically located in the `config` directory of a Rails application.
-
----
 
 # Fatures to implement in Cruddur web app:
 
@@ -274,3 +251,31 @@ end
 
 
 ## 6) Create a model for user
+
+---
+
+# Knowledge NOTES:
+
+## Model-View-Controller (MVC) pattern: 
+Rails uses the MVC pattern to structure your application. This separates the data (model), the presentation (view), and the logic (controller) of your application, making it easier to maintain and understand.
+
+ ## Breakdown Of The routes.rb File 
+ The file extension for `routes.rb` is **.rb**, which stands for **Ruby**. It's a plain text file that contains code written in the Ruby programming language.
+
+**Here's why it's a .rb file:**
+
+1. **Purpose:** The `routes.rb` file is specifically used in **Ruby on Rails** web applications to define the application's routes. These routes determine how incoming web requests are mapped to specific controller actions, essentially controlling how users navigate through different pages and features of the application.
+
+2. **Ruby code:** The content of `routes.rb` is written in Ruby syntax, using keywords, methods, and structures that are part of the Ruby language. This code is responsible for setting up the routing rules and defining how URLs are matched to controller actions.
+
+3. **Convention:** In Rails, files ending with the .rb extension are conventionally used for source code files written in Ruby. This helps maintain consistency and organization within a Rails project.
+
+**Key points:**
+
+- It's a core part of the Rails framework.
+- It's essential for defining the application's navigation structure.
+- It's written in Ruby, hence the .rb extension.
+- It's typically located in the `config` directory of a Rails application.
+
+## What is ERB?
+In Ruby on Rails, "ERB" stands for "Embedded Ruby". ERB is a templating system that enables Ruby code to be embedded within a text document. This is particularly useful in web applications where you might want to use Ruby to dynamically generate HTML content. In an ERB template, Ruby code is enclosed in special tags that the ERB processor recognizes and executes when the template is rendered.
