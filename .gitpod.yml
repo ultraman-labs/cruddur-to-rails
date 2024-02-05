@@ -16,6 +16,8 @@ tasks:
       sudo apt update
       sudo apt install -y postgresql-client-13 libpq-dev
       sudo apt install postgresql postgresql-contrib
+      sudo service postgresql start
+
     command: |
       export GITPOD_IP=$(curl ifconfig.me)
       source "$THEIA_WORKSPACE_ROOT/bin/rds/update-sg-rule"
