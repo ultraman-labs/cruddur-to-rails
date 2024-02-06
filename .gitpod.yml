@@ -11,16 +11,7 @@ tasks:
 
   - name: postgres
     init: |
-      curl -fsSL https://www.postgresql.org/media/keys/ACCC4CF8.asc|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/postgresql.gpg
-      echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" |sudo tee  /etc/apt/sources.list.d/pgdg.list
-      sudo apt update
-      sudo apt install -y postgresql-client-13 libpq-dev
-      sudo apt install postgresql postgresql-contrib
-      sudo service postgresql start
-
-    command: |
-      export GITPOD_IP=$(curl ifconfig.me)
-      source "$THEIA_WORKSPACE_ROOT/bin/rds/update-sg-rule"
+      docker-compose up -d
 
   - name: react-js
     command: |
@@ -40,30 +31,15 @@ tasks:
       
   - name: rails
     init: |
-       # Source RVM scripts
-       source /home/gitpod/.rvm/scripts/rvm
-   
-       # Install and use a specific Ruby version
-       rvm install "ruby-3.2.2"
-       rvm use "ruby-3.2.2" --default
-     
-       # Update RubyGems
-       gem update --system
-   
-       # Install Rails
-       gem install rails  
-   
-       # Append Gem bin directory to PATH (for the current session)
-       export PATH="$(ruby -e 'puts Gem.user_dir')/bin:$PATH"
+      source /home/gitpod/.rvm/scripts/rvm
+      rvm install "ruby-3.2.2"
+      rvm use "ruby-3.2.2" --default
+      gem update --system
+      gem install rails  
+      echo 'export PATH="$PATH:$(ruby -e "puts Gem.user_dir")/bin"' >> ~/.bashrc
+      cd cruddur
+      bundle install
 
-       # Change to the root directory of the Rails application
-       cd cruddur
-
-       # Install all gems specified in Gemfile
-       bundle install
-
-      # Cache the installation of gems to speed up future workspace startups
-      # Optional: Specify the path to cache
 ports:
   - name: frontend
     port: 3000-3100
