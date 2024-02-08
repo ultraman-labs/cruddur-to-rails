@@ -8,22 +8,24 @@ default: &default
   adapter: postgresql
   # cd pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   # cd timeout: 5000
-
+  encoding: unicode
+  host: localhost
+  username: postgres
+  password: <%= ENV['POSTGRES_PASSWORD'] || "password" %>
+  port: 5432
+  
 development:
   <<: *default
   database: cruddur
-  username: postgres
-  password: <%= ENV['POSTGRES_PASSWORD'] || "password" %>
-  host: localhost
-  port: 5432
+  
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: storage/test.sqlite3
+  database: cruddur_test
 
 production:
   <<: *default
-  database: storage/production.sqlite3
+  database: cruddur_production

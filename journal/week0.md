@@ -266,6 +266,29 @@ To connect to the 'cruddur' database in PostgreSQL, you can use the \c command f
 docker exec -it cruddur-to-rails-db-1 psql -U postgres
 ```
 
+*1.1* You can also access (outside of the Docker PostgreSQL container) with the command:
+
+```bash
+psql postgresql://postgres:password@127.0.0.1:5432/cruddur
+```
+If the response is:
+
+```bash
+psql: error: connection to server at "127.0.0.1", port 5432 failed: FATAL:  database "cruddur" does not exist
+```
+Then the 'cruddur' database needs to be created. This can be done via Rails.
+
+```bash
+rails db:create
+```
+
+If needed, establishing a connection to Postgress is done with the command:
+
+```bash
+psql -U postgres -h localhost
+```
+
+
 *2.* To list all databases, you should use the command below. This command displays the databases along with their owners, encoding, collation, ctype, and access privileges. This is how you can get an overview of all the databases present in your PostgreSQL instance.
 
 ```sql
