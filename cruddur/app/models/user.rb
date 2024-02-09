@@ -1,2 +1,9 @@
 class User < ApplicationRecord
-end
+    validates :name, presence: true
+    validates :email, presence: true, uniqueness: true
+    validates :password_digest, presence: true
+  
+    # Association with posts
+    has_many :posts
+  end
+  
