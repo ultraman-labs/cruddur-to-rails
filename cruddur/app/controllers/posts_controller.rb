@@ -1,2 +1,8 @@
 class PostsController < ApplicationController
-end
+    def index
+      @posts = Post.all
+    end
+  
+    # other actions (show, new, edit, etc.) go here
+  end
+  
