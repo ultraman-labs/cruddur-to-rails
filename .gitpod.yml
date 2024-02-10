@@ -44,6 +44,9 @@ tasks:
       echo 'export PATH="$PATH:$(ruby -e "puts Gem.user_dir")/bin"' >> ~/.bashrc
       cd cruddur
       bundle install
+      rails db:create
+      rails db:migrate
+      rails db:seed
 
 ports:
   - name: frontend
