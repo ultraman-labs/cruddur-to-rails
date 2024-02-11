@@ -386,7 +386,7 @@ This is especially useful when working on multiple projects that may require dif
 ---
 # Knowledge Notes Continued:
 
-# Rails common commands
+## Rails common commands
 **rails new <appname>:** Creates a new Rails application with the given name. You can also pass additional options to customize the setup.
 
 **rails server or rails s:** Starts the Rails server, making your application accessible via a web browser. You can specify the environment and port.
@@ -455,4 +455,14 @@ These commands cover a wide range of tasks you'll typically perform while develo
     ---
 
   ## Configuring the *development.rb* file:
-  Currently the Gitpod host is *config.hosts << "3000-ultramanlab-cruddurtora-la0p81ysawe.ws-us108.gitpod.io*. In the *development.rb* file, under the */cruddur/config/environments/* directory has this Rails this line of code as a static configuration. However each time a new Gitpod workspace environment is started this line of code will change. So we need to dynamically load this line of code. 
+  Currently the Gitpod host is *config.hosts << "3000-ultramanlab-cruddurtora-la0p81ysawe.ws-us108.gitpod.io*. In the *development.rb* file, under the */cruddur/config/environments/* directory, Rails has this line of code as a static configuration. However each time a new Gitpod workspace environment is started, the host id will change. Consequently, we need to change this line of code so that it dynamically loads the Gitpod host id.
+
+  So how do we find out what the host random genereated id is? More so, how do we code this line into the *development.rb* file? Well, we have to use the CLI and sift Gitpod's environment (similar if uisng Github's Code-Space). If you look at the URL of your Gitpod workspace, you'll see the generated host id. Now since the Rails server is using port 3000 and
+  
+  One way is to enter the bash command:
+
+  ```bash
+  env | grep la0p
+  ```
+
+  config.hosts << "3000-#{ENV['HOSTNAME']}.ws-us108.gitpod.io"

@@ -5,24 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Cruddur" />
   <title>Cruddur</title>
+  <%= stylesheet_link_tag 'pages', media: 'all', 'data-turbolinks-track': 'reload' %>
 </head>
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
-  <main>
-    <!-- app/views/pages/index.html.erb -->
-    <%= form_with(url: "/submit", method: "post", data: { controller: "form" }) do |form| %>
-      <div>
-        <%= form.label :name %>
-        <%= form.text_field :name, data: { target: "form.name" } %>
-      </div>
-      <div>
-        <%= form.label :email %>
-        <%= form.email_field :email, data: { target: "form.email" } %>
-      </div>
-      <div>
-        <%= form.submit "Submit", data: { action: "click->form#submitForm" } %>
-      </div>
-    <% end %>  
+  <main class="container">
+    <div class="image-container">
+      <!-- Image tag for the banner -->
+      <%= image_tag('cruddur-banner.jpg', alt: 'Cruddur Banner') %>
+    </div>
+    <div class="form-container">
+      <!-- app/views/posts/index.html.erb -->
+      <%= form_with(url: "/submit", method: "post", data: { controller: "form" }) do |form| %>
+        <div>
+          <%= form.label :name %>
+          <%= form.text_field :name, data: { target: "form.name" } %>
+        </div>
+        <div>
+          <%= form.label :email %>
+          <%= form.email_field :email, data: { target: "form.email" } %>
+        </div>
+        <div>
+          <%= form.submit "Submit", data: { action: "click->form#submitForm" } %>
+        </div>
+      <% end %>  
+    </div>
   </main>
 </body>
 </html>

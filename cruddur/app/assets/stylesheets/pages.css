@@ -1,0 +1,38 @@
+body {
+    background-color: #951ee4; /* This is a shade of purple, adjust the hex value to get the exact shade you want */
+  }
+
+/* Simple flexbox layout to align the image and form side by side */
+.container {
+  display: flex;
+  align-items: center;
+}
+.image-container {
+  margin-right: 20px; /* Adjust the space between the image and the form */
+}
+.form-container {
+  flex-grow: 1;
+}
+
+/* Bold labels */
+label {
+    font-weight: bold;
+  }
+
+/* Increase font size for labels */
+label {
+    font-size: 1.5em; /* Change the value to the size you want */
+  }
+  
+  /* Increase font size for input fields */
+  input[type="text"],
+  input[type="email"],
+  input[type="submit"] {
+    font-size: 1.5em; /* Change the value to the size you want */
+  }
+  
+  /* Increase font size for submit button */
+  input[type="submit"] {
+    font-size: 1.5em; /* Change the value to the size you want */
+  }
+  
