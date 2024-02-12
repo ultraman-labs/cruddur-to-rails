@@ -255,6 +255,43 @@ end
 
 ## 6) Create a model for user
 
+
+
+
+
+## 7 & 8) Create a migration for a user table and for post table 
+
+To create the **user** and **post** tables respectively, use the following commands in the terminal:
+
+```bash
+rails generate migration CreateUsers
+```
+
+```bash
+rails generate migration CreatePosts
+```
+
+To verify that these tables have been created run the command:
+
+```bash
+$ rails db:migrate:status
+
+database: cruddur
+
+ Status   Migration ID    Migration Name
+--------------------------------------------------
+   up     20240206031844  Create users
+   up     20240206031938  Create posts
+```
+The output shows that both migrations have a status of "up," which indicates theythese migration tables have been run successfully and are applied to the database.
+
+
+## 9) Apply validation to the user table
+
+
+## 10) Apply validation to the user table
+
+
 ---
 ## Docker Commands with PSQL
 
