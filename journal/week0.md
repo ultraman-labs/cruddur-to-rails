@@ -288,9 +288,71 @@ The output shows that both migrations have a status of "up," which indicates the
 
 ## 9) Apply validation to the user table
 
+Validations are applied at the model level. To add validations to a User model, what needs to be done is to write validation rules in the User model file **(app/models/user.rb)**. Here are the current validations:
 
-## 10) Apply validation to the user table
+```ruby
+class User < ApplicationRecord
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :validatable
+    validates :name, presence: true
+    validates :email, presence: true, uniqueness: true, format: { with: URI::MailTo::EMAIL_REGEXP }
+    validates :password_digest, presence: true
+  
+    # Association with posts
+    has_many :posts
 
+     # Custom validation
+  validate :check_additional_requirements
+
+  private
+
+  def check_additional_requirements
+    # Custom validation logic here
+  end
+
+  end
+```
+
+
+## 10) Apply validation to the post table
+
+
+## 15) Implementing a comprehensive email validation in the Cruddur Rails application
+
+Using an authentication **gem** like **Devise** provides a robust solution. Devise includes its own email validation, along with many other features for user authentication.
+
+
+To use Devise, add it to your **cruddur/gemfile**. Preferably at the top of the Gemfile:
+
+```ruby
+# Implementing user authentication and authorization feature
+gem 'devise'
+```
+
+**Install the Gem:** After saving the Gemfile, go back to the terminal, ensure you're in the Crudur project's root directory (where the Gemfile is located), and run the following command to install Devise and any other pending gems:
+
+```bash
+bundle install
+```
+
+Then, run bundle install to install the gem. After that, you can install Devise in the Cruddur app and generate the user model with Devise:
+
+```bash
+rails generate devise:install
+rails generate devise User
+```
+
+This will create a new User model with Devise's default configurations, which include email validation. Then, if needed, the Cruddur can be customized with Devise's settings to suit the needs of the Cruudr app.
+
+**Migrate the Database:** If the Devise generator created any new migration files (like for adding new columns to your User model), run the following command:
+
+```bash
+rails db:migrate
+```
+
+This process will integrate Devise into your Rails Cruddur application. Ensure that your terminal session is in the correct directory, and that you have correctly edited and saved the Gemfile.
 
 ---
 ## Docker Commands with PSQL
