@@ -256,10 +256,10 @@ end
 ## 6) Create a model for user
 
 
+## 7) Create a model for a post
 
 
-
-## 7 & 8) Create a migration for a user table and for post table 
+## 8 & 9) Create a migration for a user table and for post table 
 
 To create the **user** and **post** tables respectively, use the following commands in the terminal:
 
@@ -286,7 +286,7 @@ database: cruddur
 The output shows that both migrations have a status of "up," which indicates theythese migration tables have been run successfully and are applied to the database.
 
 
-## 9) Apply validation to the user table
+## 10) Apply validation to the user table
 
 Validations are applied at the model level. To add validations to a User model, what needs to be done is to write validation rules in the User model file **(app/models/user.rb)**. Here are the current validations:
 
@@ -316,7 +316,7 @@ class User < ApplicationRecord
 ```
 
 
-## 10) Apply validation to the post table
+## 11) Apply validation to the post table
 
 To apply validations to the Post table in the Cruddur Rails application, you would be working with the model file associated with the Post table, typically named **post.rb** within the **app/models** directory.
 
@@ -342,6 +342,47 @@ class Post < ApplicationRecord
 end
 ```
 
+## 12) Define table relationships between the user and post table
+
+
+-- **1. Set Up Model Associations**
+
+You need to edit the model files to define the relationship between *'User'* and *'Post'*.
+
+**User Model (app/models/user.rb):**
+
+Add **has_many :posts** to indicate that each user can have many posts.
+
+```ruby
+class User < ApplicationRecord
+  has_many :posts
+  # other code...
+end
+```
+**Post Model (app/models/post.rb):**
+
+Add belongs_to :user to indicate that each post belongs to a user.
+
+```Ruby
+class Post < ApplicationRecord
+  belongs_to :user
+  # other code...
+end
+```
+---
+---
+
+To verify the defined table relationships between the User and Post tables in a Rails application, you can look at the model files.
+
+**User Model (app/models/user.rb):**
+ook for a line like **has_many :posts**. This indicates that a single User can be associated with multiple Post records.
+
+**Post Model (app/models/post.rb):**
+
+Look for a line like **belongs_to :user**. This indicates that each Post record is associated with a single User.
+---
+
+## 13) 
 
 
 ## 15) Implementing a comprehensive email validation in the Cruddur Rails application
