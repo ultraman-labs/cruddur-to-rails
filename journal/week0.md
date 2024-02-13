@@ -318,6 +318,31 @@ class User < ApplicationRecord
 
 ## 10) Apply validation to the post table
 
+To apply validations to the Post table in the Cruddur Rails application, you would be working with the model file associated with the Post table, typically named **post.rb** within the **app/models** directory.
+
+**Run a Rails Generator**
+If the Post model hasn't been created yet, you can generate it using a Rails generator. This will create the model file along with other associated files like migration files.
+
+```bash
+rails generate model Post name:string description:text
+```
+
+This command creates the Post model with name and description fields. 
+
+
+**Edit the Post Model:** Open the post.rb file and define your validations. Rails provides a variety of validation helpers to check for conditions such as presence, uniqueness, format, and length.
+
+```ruby
+class Post < ApplicationRecord
+  validates :name, presence: true
+  validates :description, presence: true
+
+  # Association with user
+  belongs_to :user
+end
+```
+
+
 
 ## 15) Implementing a comprehensive email validation in the Cruddur Rails application
 
