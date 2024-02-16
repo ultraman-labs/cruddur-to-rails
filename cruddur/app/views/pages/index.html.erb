@@ -10,11 +10,14 @@
 </head>
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div class="image-container">
+      <!-- Image tag for the banner -->
+      <%= image_tag('cruddur-banner.jpg', alt: 'Cruddur Banner') %>
+    </div>
   <main class="container">
-    <h1>Welcome to Cruddur!</h1>
-    <p>The disposable micro-blogging platform. Say it... then forget it...</p>
-    <%= link_to 'Login', new_user_session_path, class: 'btn btn-primary' %>
+    <h1>Welcome to Cruddur Hermanos y Hermanitas!<br></h1>
     <!-- Add more content and styling as needed -->
   </main>
+  <h3><%= link_to 'Login', new_user_session_path, class: 'btn btn-primary' %></h3>
 </body>
 </html>
