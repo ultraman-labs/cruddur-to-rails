@@ -631,3 +631,73 @@ These commands cover a wide range of tasks you'll typically perform while develo
   ```
 
   config.hosts << "3000-#{ENV['HOSTNAME']}.ws-us108.gitpod.io"
+
+  ---
+
+  # Frontend
+  ### Create a Homepage
+
+ **1)** To create a homepage you need to generate a new controller. You can call this PagesController with an index action as it's a common convention for html pages.
+
+  ```bash
+  rails generate controller Pages index
+  ``` 
+  This will generate a new controller with a view for the index action, typically at **app/views/pages/index.html.erb**
+
+**2)** Set the Homepage as the Root Route:
+
+In your config/routes.rb, set the root path to the index action of your PagesController:
+```ruby
+root 'pages#index'
+```
+
+**3)** Add Navigation to the Login Page:
+
+On your new homepage (app/views/pages/index.html.erb), add a link to the login page:
+
+``erb
+<%= link_to 'Login', new_user_session_path %>
+``
+The ****new_user_session_path** is a path helper provided by Devise for the login page. Make sure you have the right path name. You can check the available paths by running rails routes in your terminal.
+
+**4)** Update the Login Page:
+
+- Move the form and related content from app/views/posts/index.html.erb to a new view provided by Devise for sessions, typically app/views/devise/sessions/new.html.erb.
+- If you've customized the Devise views, ensure you place the form code in the appropriate Devise view for signing in.
+- If you haven't already customized Devise views, you can do so by running:
+
+```bash
+rails generate devise:views
+```
+- After running this command, you'll find all the Devise views in app/views/devise. Locate the sessions/new.html.erb file and update it with your form code.
+
+**5)** Style and Structure Your Homepage:
+
+- The homepage should welcome users and provide information about your application. Here's a simple example
+
+```html
+<!-- app/views/pages/index.html.erb -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Welcome to Cruddur" />
+  <title>Welcome to Cruddur</title>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <main class="container">
+    <h1>Welcome to Cruddur!</h1>
+    <p>The disposable micro-blogging platform. Say it... then forget it...</p>
+    <%= link_to 'Login', new_user_session_path, class: 'btn btn-primary' %>
+    <!-- Add more content and styling as needed -->
+  </main>
+</body>
+</html>
+```
+
+- Customize this page with your desired content, styling, and additional links as needed.
+
+---

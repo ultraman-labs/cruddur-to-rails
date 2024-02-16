@@ -1,0 +1,20 @@
+<!-- app/views/pages/index.html.erb -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Welcome to Cruddur" />
+  <title>Welcome to Cruddur</title>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <main class="container">
+    <h1>Welcome to Cruddur!</h1>
+    <p>The disposable micro-blogging platform. Say it... then forget it...</p>
+    <%= link_to 'Login', new_user_session_path, class: 'btn btn-primary' %>
+    <!-- Add more content and styling as needed -->
+  </main>
+</body>
+</html>
