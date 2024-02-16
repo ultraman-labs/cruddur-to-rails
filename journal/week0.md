@@ -423,13 +423,19 @@ This process will integrate Devise into your Rails Cruddur application. Ensure t
 ---
 ## Docker Commands with PSQL
 
-To connect to the 'cruddur' database in PostgreSQL, you can use the \c command followed by the name of the database. Here's how you do it:
+To connect to the 'cruddur' database in PostgreSQL, you can use the **\c** command followed by the name of the database.
+Here's how you do it:
 
 *1.* First, ensure you are in the PostgreSQL command line interface. You can access it using the Docker command:
 
 ```bash
 docker exec -it cruddur-to-rails-db-1 psql -U postgres
 ```
+After connecting, at the prompt, enter the following command:
+```psql
+\c cruddur
+```
+
 
 *1.1* You can also access (outside of the Docker PostgreSQL container) with the command:
 
