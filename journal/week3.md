@@ -1,3 +1,15 @@
+## Helpful Docker commands
+
+```bash
+docker ps
+
+or
+
+docker ps -a
+```
+This command shows a list of all running containers, their IDs, images, command being executed, creation time, status, ports, and name. The variation with the option **-a**, shows all containers, including those that are not currently running. In the context of the Docker command docker ps, the ps stands for **"process status".**
+
+
 ## Docker Commands with PSQL
 
 To connect to the 'cruddur' database in PostgreSQL, you can use the **\c** command followed by the name of the database.
