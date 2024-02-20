@@ -1,69 +1,77 @@
-# Week 3 — Decentralized Authentication
+## Docker Commands with PSQL
 
-## Ultra Man (Tony)
+To connect to the 'cruddur' database in PostgreSQL, you can use the **\c** command followed by the name of the database.
+Here's how you do it:
 
+*1.* First, ensure you are in the PostgreSQL command line interface. You can access it using the Docker command:
 
-# Progress/reference and "Ah-ha" notes to self
-| *********************** |
-| --- |
-| * [Field Notes](https://github.com/ultraman-labs/aws-bootcamp-cruddur-2023/blob/main/_docs/assets/week3/Notes-Week3.txt) |
-| --- |
-| ** Using Chrome's DevTools to troubleshoot un-authenticated user |
-| --- |
-| * ![Sigin Error](../_docs/assets/week3/goodsignuperror.png) |
-| --- |
-| ** Received the expected signin error, now time to setup Cognito user and user pool.|
-| --- |
-| * ![Happy Error](../_docs/assets/week3/happyerror.png) |
-| * ---|
-| ** Creating user in AWS Cognito
-| * ---|
-| * ![Cognito User](../_docs/assets/week3/creatinguser.png) |
-| * --- | 
-<p> --- <br>  
-    ** Wow! In the sign-in page of Cruddur, I was receiving an error of "User pool us-west-1_gOH8uljSz does not exist." <br>
-       This threw me good! I initially thought to look in the docker-compose.yml file for code line that referenced <br>
-       the "REACT_APP_AWS_USER_POOLS_ID" environment variable-- which contained the prior "User pool ID" that AWS <br>
-       Cognito generated. After updating this variable, I went back and restarted the docker-compose.ym file. But <br>
-       the sign-in error persisted. Hmmm...what the strange tacos was going on!? Okay, somehow I made the cerbral <br>
-       leap of thinking that perhaps the REACT_APP_CLIENT_ID env var had change as well--- well it did! So I grabbed <br>
-       (copied) the new Client ID that Cognito generated, and updated the pertinent variable in docker-compose.yml <br>
-       Restarted the docker file and voila! After going back to the Cruddur sign-in page I was able to log in! </p>
-    
-   ![Another Sigin Error](../_docs/assets/week3/signinerror.png)  <br><br><br><br><br><br>
-   ---
-  >> ** Confirming that, after authenticating, the preferred user name atribute from Cognito was passed onto the Cruddur app.<br><br> 
-       ![Preferred User](../_docs/assets/week3/preferredusername.png)
-   
-<br><br><br><br><br><br>
----
+```bash
+docker exec -it cruddur-to-rails-db-1 psql -U postgres
+```
+After connecting, at the prompt, enter the following command:
+```psql
+\c cruddur
+```
 
 
- >> ** Received email confirmaition code. <br><br><br><br>
- ![Confirm Email](../_docs/assets/week3/verifycode2.png) 
- 
- <br><br><br><br><br><br>
- ---   
- 
- >> ** Cruddur prompting to enter confirmation code sent to my email. <br><br><br><br>
- ![Confirm Email](../_docs/assets/week3/confcode.png) 
- 
- <br><br><br><br><br><br>
- ---
->> ** In Cognito, verifying the status of of the user account as enabled and user email as confirmed. <br><br><br><br>
-      ![Confirming](../_docs/assets/week3/confirmuser.png) 
+*1.1* You can also access (outside of the Docker PostgreSQL container) with the command:
 
-<br><br><br><br><br><br>
- ---
->> ** Testing Cruddur's password recovery page. It Worked! <br><br><br><br>
-  ![Password Recovery](../_docs/assets/week3/pwrecovery.png)
+```bash
+psql postgresql://postgres:password@127.0.0.1:5432/cruddur
+```
+If the response is:
 
-<br><br><br><br><br><br>
- ---
+```bash
+psql: error: connection to server at "127.0.0.1", port 5432 failed: FATAL:  database "cruddur" does not exist
+```
+Then the 'cruddur' database needs to be created. This can be done via Rails.
 
->> ** Successfully resetting user password. <br><br><br><br>
-  ![Password Recovery](../_docs/assets/week3/pwresetgood.png)
+```bash
+rails db:create
+```
 
-<br><br><br><br><br><br>
- ---   
+If needed, establishing a connection to Postgress is done with the command:
 
+```bash
+psql -U postgres -h localhost
+```
+
+
+*2.* To list all databases, you should use the command below. This command displays the databases along with their owners, encoding, collation, ctype, and access privileges. This is how you can get an overview of all the databases present in your PostgreSQL instance.
+
+```sql
+\l or \list
+```
+
+
+*3.* Once in the PostgreSQL CLI, connect to the 'cruddur' database by executing:
+
+```sql
+\c cruddur
+```
+Now that you're connected to the 'cruddur' database in PostgreSQL, here are some common commands you can use to explore and interact with the database:
+
+```sql
+\dt                            List Tables
+\d table_name                  Describe a table
+SELECT * FROM table_name;      Query data
+\du                            List Users and Their Roles
+\s                             View Query History
+SELECT current_database();     Show Current Database
+
+CREATE TABLE new_table_name (             Create a New Table
+    column1_name column1_datatype,
+    column2_name column2_datatype,
+    ...
+);
+
+
+INSERT INTO table_name (column1, column2, ...) VALUES (value1, value2, ...);           Insert Data: To insert data into a table:
+
+
+UPDATE table_name SET column = value WHERE condition;                                  Update Data: To update existing data:
+
+
+DELETE FROM table_name WHERE condition;                                                Delete Data: To delete data from a table:
+
+```
