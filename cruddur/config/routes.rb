@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'dashboards/show'
   get 'pages/index'
   devise_for :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -20,6 +21,10 @@ Rails.application.routes.draw do
   
   # Route for creating a new post
   post 'posts' => 'posts#create'
-  
-  # other routes
+
+  # Route to the new action after successful login  
+  get 'dashboard', to: 'dashboards#show'
+
+  # other routes  
+
 end

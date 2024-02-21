@@ -5,7 +5,9 @@
 - [Initial settings](week1.md#intial-settings)
 - [Features to implement](week2.md#features-to-implement)
 - [Docker Commands with PSQL](week3.md#docker-commands)
+- [Creating Test Page After Successful Login](week5.md)
 - [Knowledge Notes](week4.md#stuff-i-discovered-deving-with-rails)
+
 
 
 **Ruby**
